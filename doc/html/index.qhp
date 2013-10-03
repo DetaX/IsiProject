@@ -1,0 +1,865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+  <namespace>org.doxygen.isiviewer</namespace>
+  <virtualFolder>doc</virtualFolder>
+  <filterSection>
+    <filterAttribute>doxygen</filterAttribute>
+    <toc>
+      <section title="ISIviewer 2006-2013" ref="index.html">
+        <section title="Namespaces">
+          <section title="Namespace List" ref="namespaces.html">
+            <section title="Ui" ref="namespaceUi.html" />
+          </section>
+        </section>
+        <section title="Classes">
+          <section title="Class List" ref="annotated.html">
+            <section title="Ui" ref="namespaceUi.html">
+              <section title="MainWindow" ref="classUi_1_1MainWindow.html" />
+            </section>
+            <section title="Cube" ref="classCube.html">
+              <section title="Cube" ref="classCube.html#a06f3d86fb63e3aad08623610aa3c17b4" />
+              <section title="~Cube" ref="classCube.html#a600d629a60344171d18ae77b3fb43912" />
+            </section>
+            <section title="MyMainWindow" ref="classMyMainWindow.html">
+              <section title="MyMainWindow" ref="classMyMainWindow.html#a695339a56877e536d37c63ceb88088f9" />
+              <section title="slotAbout" ref="classMyMainWindow.html#acbae9d2dda0f04dda1722c45606b8881" />
+              <section title="_myScene" ref="classMyMainWindow.html#a0d7ebbd64ecf5e3e19d566c0ddfd6e6a" />
+              <section title="_ui" ref="classMyMainWindow.html#aa85150e2cec240e1522e6c0025939386" />
+            </section>
+            <section title="MyQGLViewer" ref="classMyQGLViewer.html">
+              <section title="MyQGLViewer" ref="classMyQGLViewer.html#aa2e94685fc91a2f4e0e4e909f079eb13" />
+              <section title="draw" ref="classMyQGLViewer.html#a5119027de225936b837f689d0f7ecc1e" />
+              <section title="init" ref="classMyQGLViewer.html#af231a0313ce6839d6fcd5b1f0fbcc04d" />
+              <section title="keyPressEvent" ref="classMyQGLViewer.html#a85151895c53f940fda4e69b7805be7d6" />
+              <section title="setMyScene" ref="classMyQGLViewer.html#a8e959c24b6541e198de74a83a014c77e" />
+              <section title="_myScene" ref="classMyQGLViewer.html#afdd0d1f32bb1699b94b272413189607f" />
+            </section>
+            <section title="MyScene" ref="classMyScene.html">
+              <section title="displayModeType" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dd">
+                <section title="WIREFRAME" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda9522de35cfc340248e61351c071409d2" />
+                <section title="SMOOTH" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda495d6276ea59a2af6cb3111c7d5751a4" />
+                <section title="NORMALS" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda00a32d4e085ae0a3b578dd69a6d042ca" />
+              </section>
+              <section title="MyScene" ref="classMyScene.html#a6b67e5428ba302a5808661cd2bbb517c" />
+              <section title="~MyScene" ref="classMyScene.html#a0e6e8660d77680f29de571fa2e966a64" />
+              <section title="addObject" ref="classMyScene.html#ac831be74049ad54603badd0fef4d3b71" />
+              <section title="currentObject" ref="classMyScene.html#a223e11b9e24ae03887645ec396c2729a" />
+              <section title="displayMode" ref="classMyScene.html#afb791beceea5de9f0dc8fb47b5ec76c8" />
+              <section title="draw" ref="classMyScene.html#a11c35160110cfedb595e405077564bd7" />
+              <section title="init" ref="classMyScene.html#ab4f8f47610059e0eaaf07601a8225691" />
+              <section title="keyPressEvent" ref="classMyScene.html#a9ba290c04395ddb516325e2c23bbac7d" />
+              <section title="radius" ref="classMyScene.html#aeedf698dbf5c3cf8f7c4cbc22036a57e" />
+              <section title="radiusIncr" ref="classMyScene.html#a782e87414a79c87ff17778c2c6c6d183" />
+              <section title="radiusMax" ref="classMyScene.html#a59c4d9a72e36fae1c23cc6bdfcbe60ac" />
+              <section title="radiusMin" ref="classMyScene.html#add386630678eee06fc1aa28ca937cf73" />
+              <section title="setCurrentObject" ref="classMyScene.html#a73d73f5a7ce4c3ba4878718fdd8951a7" />
+              <section title="setDisplayMode" ref="classMyScene.html#a77e9102cef13e8bde68a8f799ee3604d" />
+              <section title="setRadius" ref="classMyScene.html#abfbf9297e676d8a5601040d62f8733cf" />
+              <section title="sigCurrentObjectChanged" ref="classMyScene.html#a3ef1135ffe93af395024dda7d00b9c1c" />
+              <section title="sigDisplayModeChanged" ref="classMyScene.html#ae304d120bad0d657422a516575eb7b86" />
+              <section title="sigDisplayNormalsChanged" ref="classMyScene.html#a03b09d59391e3558752ea40560bdb856" />
+              <section title="sigFlipNormalsChanged" ref="classMyScene.html#a20c130ec4789144432c6785f2df39e84" />
+              <section title="sigRadiusChanged" ref="classMyScene.html#aa3948a6670bb04fc9ac89172d18575ce" />
+              <section title="sigSmoothChanged" ref="classMyScene.html#a192763333c954d7a44abb9eb7382d3be" />
+              <section title="sigWireframeChanged" ref="classMyScene.html#a7a37834e7a3efeb4fe4be9c69bcade0d" />
+              <section title="slotSetCurrentObject" ref="classMyScene.html#a51fe7bb581b5ace63cea7fd6dec49ada" />
+              <section title="slotSetDisplayMode" ref="classMyScene.html#abe49f17d3e74e03a8df2bf66841cdd0f" />
+              <section title="slotSetDisplayNormals" ref="classMyScene.html#ad422ee6a76dca6ad7d1bac7da9d42fe3" />
+              <section title="slotSetFlipNormals" ref="classMyScene.html#ac9f701c50f43ff1e5c09b811b8d649c1" />
+              <section title="slotSetRadius" ref="classMyScene.html#ac1e81aa30f27b71638b774d9723d7e7a" />
+              <section title="slotSetSmooth" ref="classMyScene.html#a743ac1b6720dff62a660b36458be618a" />
+              <section title="slotSetWireframe" ref="classMyScene.html#ace3a90ce717fcdf20d1c6bc97255fb80" />
+              <section title="_currentObject" ref="classMyScene.html#a29e1f44881eb2c4bbbe1008b95da5388" />
+              <section title="_displayMode" ref="classMyScene.html#a53b8b43c74f584535b56f12589298a04" />
+              <section title="_displayWireframe" ref="classMyScene.html#a3120eeaf5a70b46a163b5140daaca82d" />
+              <section title="_normalsFlipped" ref="classMyScene.html#ad8609451844f7f32317678e66ebc48ee" />
+              <section title="_objects" ref="classMyScene.html#af652aa952b837a86aa1ae7392ce67db8" />
+              <section title="_radius" ref="classMyScene.html#a711e30a7d5a84e70acd9c623607533f6" />
+              <section title="_radiusIncr" ref="classMyScene.html#ab0bea34df9bdd5203bcf6ead822ee0c4" />
+              <section title="_radiusMax" ref="classMyScene.html#aba71c91a332e2ce9ffe4ed79089611ab" />
+              <section title="_radiusMin" ref="classMyScene.html#a1812c153076757914f96be0cf1ee7d63" />
+            </section>
+            <section title="Object3D" ref="classObject3D.html">
+              <section title="Object3D" ref="classObject3D.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b" />
+              <section title="~Object3D" ref="classObject3D.html#a73b016a1aa7eb3be3c49671f3054565d" />
+              <section title="draw" ref="classObject3D.html#a684fd3d4f083db533f855430e97d19f7" />
+              <section title="drawNormals" ref="classObject3D.html#a821f2ce108f100575befb2355cd3cd0f" />
+              <section title="extendBoundingBox" ref="classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" />
+              <section title="getBoundingBoxCenter" ref="classObject3D.html#a0f8f06be2cdbaac07e7f3de6143ffe85" />
+              <section title="getName" ref="classObject3D.html#aa80515b56146b062e55d91c01cbbba02" />
+              <section title="setName" ref="classObject3D.html#abe17f09bc38e52115b56cddba2d536b8" />
+              <section title="toOStream" ref="classObject3D.html#aa98582d326ed1d3d8987f44a542efa65" />
+              <section title="toString" ref="classObject3D.html#a1847587421f8a45650632dc4358f163f" />
+              <section title="operator&lt;&lt;" ref="classObject3D.html#ae84f28dc392fc50e897f2150281c6db5" />
+              <section title="_bBempty" ref="classObject3D.html#a46cb707a35870d0e585ecb7674bb049c" />
+              <section title="_bBoxMax" ref="classObject3D.html#a4ed5d3a72f81cd9d9607b04ca524eea6" />
+              <section title="_bBoxMin" ref="classObject3D.html#a7f30c09ab6671a937c35bd6281d91c17" />
+              <section title="_name" ref="classObject3D.html#aeef6c2e09d0835fb66070aa217e2a43d" />
+            </section>
+            <section title="Pyramid" ref="classPyramid.html">
+              <section title="Pyramid" ref="classPyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49" />
+              <section title="~Pyramid" ref="classPyramid.html#a4312cdd103b0794609354fccdc969092" />
+            </section>
+            <section title="TriMesh" ref="classTriMesh.html">
+              <section title="TriMesh" ref="classTriMesh.html#a826986fcfb35b980cc02b99824f691f0" />
+              <section title="~TriMesh" ref="classTriMesh.html#a30eb61f20aaf4d37a8185843980638ee" />
+              <section title="addNormalT" ref="classTriMesh.html#a32967a7d13c9cecd5ba93a89e0409f7d" />
+              <section title="addNormalV" ref="classTriMesh.html#a36f8783ffc98a97b5b022060609b7c55" />
+              <section title="addTriangle" ref="classTriMesh.html#af42d53d768083eb29b591a712037fcef" />
+              <section title="addTriangle" ref="classTriMesh.html#a2cc40e62813ae3737ea8498fdba9ab1f" />
+              <section title="addVertex" ref="classTriMesh.html#ae0d2c0bdf6b91931ee86aa51c8bfc29d" />
+              <section title="addVertex" ref="classTriMesh.html#a78f595a1296f700c87454c0923b157cf" />
+              <section title="computeBoundingBox" ref="classTriMesh.html#af2cb6957cb485045567e17c3ffb932c0" />
+              <section title="computeNormalsT" ref="classTriMesh.html#a7a0ccea06db5bee5972cf601bd48510a" />
+              <section title="computeNormalsV" ref="classTriMesh.html#a2afd756d3720ffa295ad29bab3d3a77e" />
+              <section title="draw" ref="classTriMesh.html#a16398a072c5f6b923d60931df6643838" />
+              <section title="drawNormals" ref="classTriMesh.html#ad4f59396283a880584e898f63a01670d" />
+              <section title="drawVertices" ref="classTriMesh.html#a74128459efb1828e4bb8a5c09b4f0c40" />
+              <section title="getVertex" ref="classTriMesh.html#aa939c68cb0c594b9747a5668eaa67a1d" />
+              <section title="normalize" ref="classTriMesh.html#a361e706dd2186cf6801097177b144bb6" />
+              <section title="toOStream" ref="classTriMesh.html#a1d6593d6800d384870c666f5754c3041" />
+              <section title="toString" ref="classTriMesh.html#a1b5ffabc6ca61838a769a0f94a7d0034" />
+              <section title="_normalsT" ref="classTriMesh.html#a8c30d4188c9532763e31dba7a542f14a" />
+              <section title="_normalsV" ref="classTriMesh.html#ad260f3f29ed0994c656a4affdfc82008" />
+              <section title="_triangles" ref="classTriMesh.html#a59cdc5948dea9d5579311f3dbc34bde1" />
+              <section title="_vertices" ref="classTriMesh.html#ac8b70cd7c38760ae52b626d869cdcade" />
+            </section>
+            <section title="Ui_MainWindow" ref="classUi__MainWindow.html">
+              <section title="retranslateUi" ref="classUi__MainWindow.html#a097dd160c3534a204904cb374412c618" />
+              <section title="setupUi" ref="classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58" />
+              <section title="actionAbout" ref="classUi__MainWindow.html#abdf2b43167c2cd0d3405f90b8c30e934" />
+              <section title="actionOpen" ref="classUi__MainWindow.html#a5772f39001f62b7f601aafe72caa10c0" />
+              <section title="actionOpen_off" ref="classUi__MainWindow.html#a224858a2b2e21ad5743487ba4bc498f5" />
+              <section title="actionQuit" ref="classUi__MainWindow.html#a188c243f36a2dbc10e4e2a0ad94273b1" />
+              <section title="centralwidget" ref="classUi__MainWindow.html#a356f1cf3ebda15f1fac59467ee081b74" />
+              <section title="checkBox" ref="classUi__MainWindow.html#ae8154204ed56489a091cf3a81af1f996" />
+              <section title="checkBox_2" ref="classUi__MainWindow.html#a42f54d4275ffecc52ea117a43a2a4def" />
+              <section title="checkBox_3" ref="classUi__MainWindow.html#a7a0d575eebed36eac1592982b62ea449" />
+              <section title="checkBox_flipnormals" ref="classUi__MainWindow.html#a05bbfa9995f26bb81843cdd0442ad8d4" />
+              <section title="checkBox_normals" ref="classUi__MainWindow.html#a32dff035f79e6383622134a92563058c" />
+              <section title="checkBox_smooth" ref="classUi__MainWindow.html#a32b578d8fd2483966d74642df908f56d" />
+              <section title="checkBox_wireframe" ref="classUi__MainWindow.html#a39878168f2396b45929a145c87461243" />
+              <section title="hboxLayout" ref="classUi__MainWindow.html#a31d285ec7c66c071800632d96d856ca4" />
+              <section title="horizontalLayout" ref="classUi__MainWindow.html#acd6fdc9ebacc4b25b834162380d75ce8" />
+              <section title="horizontalLayout_2" ref="classUi__MainWindow.html#a80867018070156432923d0266cc9fe25" />
+              <section title="horizontalLayout_5" ref="classUi__MainWindow.html#a14c9d4842c3e97e16e7873ef0aecdb1e" />
+              <section title="horizontalSpacer" ref="classUi__MainWindow.html#a7871ea8c4b6c595d7ccd53960b344719" />
+              <section title="label" ref="classUi__MainWindow.html#ad9c89133780f28e6efa2ec17ceb9cff5" />
+              <section title="menubar" ref="classUi__MainWindow.html#adf43d9a67adaec750aaa956b5e082f09" />
+              <section title="menuFile" ref="classUi__MainWindow.html#a7ba84cb4cdd6a12dc83bf4e100bd8d80" />
+              <section title="menuHelp" ref="classUi__MainWindow.html#ab95dbfbb0550206aeac76db36f491548" />
+              <section title="radiusSpinBox" ref="classUi__MainWindow.html#a7ee1cfc185d084eebcc86ca9fc422c58" />
+              <section title="spacerItem" ref="classUi__MainWindow.html#af00b077691d1f8fac3fb2ad4a78b55af" />
+              <section title="statusbar" ref="classUi__MainWindow.html#a1687cceb1e2787aa1f83e50433943a91" />
+              <section title="vboxLayout" ref="classUi__MainWindow.html#a3260f8759d997f75cf8450d3728639b3" />
+              <section title="verticalLayout" ref="classUi__MainWindow.html#aecd96a04789fcfec3f98d80390ad8184" />
+              <section title="verticalLayout_2" ref="classUi__MainWindow.html#a0c01bad60d9f422a1258e710635a2f65" />
+              <section title="verticalLayout_4" ref="classUi__MainWindow.html#a6f40fc110b15410c00837a446d57bdbe" />
+              <section title="viewer" ref="classUi__MainWindow.html#a1af575db6e55bcd6c4adcf97dc1910b1" />
+            </section>
+          </section>
+          <section title="Class Hierarchy" ref="hierarchy.html">
+            <section title="Object3D" ref="classObject3D.html">
+              <section title="TriMesh" ref="classTriMesh.html">
+                <section title="Cube" ref="classCube.html" />
+                <section title="Pyramid" ref="classPyramid.html" />
+              </section>
+            </section>
+            <section title="QGLViewer">
+              <section title="MyQGLViewer" ref="classMyQGLViewer.html" />
+            </section>
+            <section title="QMainWindow">
+              <section title="MyMainWindow" ref="classMyMainWindow.html" />
+            </section>
+            <section title="QObject">
+              <section title="MyScene" ref="classMyScene.html" />
+            </section>
+            <section title="Ui_MainWindow" ref="classUi__MainWindow.html">
+              <section title="Ui::MainWindow" ref="classUi_1_1MainWindow.html" />
+            </section>
+          </section>
+          <section title="Class Members" ref="functions.html">
+            <section title="All" ref="functions.html" />
+            <section title="Functions" ref="functions_func.html" />
+            <section title="Variables" ref="functions_vars.html" />
+            <section title="Enumerations" ref="functions_enum.html" />
+            <section title="Enumerator" ref="functions_eval.html" />
+            <section title="Related Functions" ref="functions_rela.html" />
+          </section>
+        </section>
+        <section title="Files">
+          <section title="File List" ref="files.html">
+            <section title="CMakeFiles" ref="dir_017ad5e908c41501f6a06b5119b37293.html">
+              <section title="2.8.11.2" ref="dir_afc4d8475f9df919b61446569294b208.html">
+                <section title="CompilerIdC" ref="dir_11b7bcac0662ed58fd1dbbaac618bebc.html">
+                  <section title="CMakeCCompilerId.c" ref="CMakeCCompilerId_8c.html">
+                    <section title="ARCHITECTURE_ID" ref="CMakeCCompilerId_8c.html#aba35d0d200deaeb06aee95ca297acb28" />
+                    <section title="COMPILER_ID" ref="CMakeCCompilerId_8c.html#a81dee0709ded976b2e0319239f72d174" />
+                    <section title="DEC" ref="CMakeCCompilerId_8c.html#ad1280362da42492bbc11aa78cbf776ad" />
+                    <section title="HEX" ref="CMakeCCompilerId_8c.html#a46d5d95daa1bef867bd0179594310ed5" />
+                    <section title="PLATFORM_ID" ref="CMakeCCompilerId_8c.html#adbc5372f40838899018fadbc89bd588b" />
+                    <section title="main" ref="CMakeCCompilerId_8c.html#a0ddf1224851353fc92bfbff6f499fa97" />
+                    <section title="info_arch" ref="CMakeCCompilerId_8c.html#a59647e99d304ed33b15cb284c27ed391" />
+                    <section title="info_compiler" ref="CMakeCCompilerId_8c.html#a4b0efeb7a5d59313986b3a0390f050f6" />
+                    <section title="info_platform" ref="CMakeCCompilerId_8c.html#a2321403dee54ee23f0c2fa849c60f7d4" />
+                  </section>
+                </section>
+                <section title="CompilerIdCXX" ref="dir_ed2e317f7f7a316f9587a610d317353b.html">
+                  <section title="CMakeCXXCompilerId.cpp" ref="CMakeCXXCompilerId_8cpp.html">
+                    <section title="ARCHITECTURE_ID" ref="CMakeCXXCompilerId_8cpp.html#aba35d0d200deaeb06aee95ca297acb28" />
+                    <section title="COMPILER_ID" ref="CMakeCXXCompilerId_8cpp.html#a81dee0709ded976b2e0319239f72d174" />
+                    <section title="DEC" ref="CMakeCXXCompilerId_8cpp.html#ad1280362da42492bbc11aa78cbf776ad" />
+                    <section title="HEX" ref="CMakeCXXCompilerId_8cpp.html#a46d5d95daa1bef867bd0179594310ed5" />
+                    <section title="PLATFORM_ID" ref="CMakeCXXCompilerId_8cpp.html#adbc5372f40838899018fadbc89bd588b" />
+                    <section title="main" ref="CMakeCXXCompilerId_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" />
+                    <section title="info_arch" ref="CMakeCXXCompilerId_8cpp.html#a59647e99d304ed33b15cb284c27ed391" />
+                    <section title="info_compiler" ref="CMakeCXXCompilerId_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6" />
+                    <section title="info_platform" ref="CMakeCXXCompilerId_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4" />
+                  </section>
+                </section>
+              </section>
+            </section>
+            <section title="objects" ref="dir_645ec83fa4e243a732144956da80a200.html">
+              <section title="cube.cpp" ref="cube_8cpp.html" />
+              <section title="cube.h" ref="cube_8h.html">
+                <section title="Cube" ref="classCube.html">
+                  <section title="Cube" ref="classCube.html#a06f3d86fb63e3aad08623610aa3c17b4" />
+                  <section title="~Cube" ref="classCube.html#a600d629a60344171d18ae77b3fb43912" />
+                </section>
+              </section>
+              <section title="pyramid.cpp" ref="pyramid_8cpp.html" />
+              <section title="pyramid.h" ref="pyramid_8h.html">
+                <section title="Pyramid" ref="classPyramid.html">
+                  <section title="Pyramid" ref="classPyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49" />
+                  <section title="~Pyramid" ref="classPyramid.html#a4312cdd103b0794609354fccdc969092" />
+                </section>
+              </section>
+              <section title="triMesh.cpp" ref="triMesh_8cpp.html" />
+              <section title="triMesh.h" ref="triMesh_8h.html">
+                <section title="TriMesh" ref="classTriMesh.html">
+                  <section title="TriMesh" ref="classTriMesh.html#a826986fcfb35b980cc02b99824f691f0" />
+                  <section title="~TriMesh" ref="classTriMesh.html#a30eb61f20aaf4d37a8185843980638ee" />
+                  <section title="addNormalT" ref="classTriMesh.html#a32967a7d13c9cecd5ba93a89e0409f7d" />
+                  <section title="addNormalV" ref="classTriMesh.html#a36f8783ffc98a97b5b022060609b7c55" />
+                  <section title="addTriangle" ref="classTriMesh.html#af42d53d768083eb29b591a712037fcef" />
+                  <section title="addTriangle" ref="classTriMesh.html#a2cc40e62813ae3737ea8498fdba9ab1f" />
+                  <section title="addVertex" ref="classTriMesh.html#ae0d2c0bdf6b91931ee86aa51c8bfc29d" />
+                  <section title="addVertex" ref="classTriMesh.html#a78f595a1296f700c87454c0923b157cf" />
+                  <section title="computeBoundingBox" ref="classTriMesh.html#af2cb6957cb485045567e17c3ffb932c0" />
+                  <section title="computeNormalsT" ref="classTriMesh.html#a7a0ccea06db5bee5972cf601bd48510a" />
+                  <section title="computeNormalsV" ref="classTriMesh.html#a2afd756d3720ffa295ad29bab3d3a77e" />
+                  <section title="draw" ref="classTriMesh.html#a16398a072c5f6b923d60931df6643838" />
+                  <section title="drawNormals" ref="classTriMesh.html#ad4f59396283a880584e898f63a01670d" />
+                  <section title="drawVertices" ref="classTriMesh.html#a74128459efb1828e4bb8a5c09b4f0c40" />
+                  <section title="getVertex" ref="classTriMesh.html#aa939c68cb0c594b9747a5668eaa67a1d" />
+                  <section title="normalize" ref="classTriMesh.html#a361e706dd2186cf6801097177b144bb6" />
+                  <section title="toOStream" ref="classTriMesh.html#a1d6593d6800d384870c666f5754c3041" />
+                  <section title="toString" ref="classTriMesh.html#a1b5ffabc6ca61838a769a0f94a7d0034" />
+                  <section title="_normalsT" ref="classTriMesh.html#a8c30d4188c9532763e31dba7a542f14a" />
+                  <section title="_normalsV" ref="classTriMesh.html#ad260f3f29ed0994c656a4affdfc82008" />
+                  <section title="_triangles" ref="classTriMesh.html#a59cdc5948dea9d5579311f3dbc34bde1" />
+                  <section title="_vertices" ref="classTriMesh.html#ac8b70cd7c38760ae52b626d869cdcade" />
+                </section>
+                <section title="Normal" ref="triMesh_8h.html#a36460bbb80d099954f507c10d6d4dce9" />
+                <section title="Triangle" ref="triMesh_8h.html#a5b9ef839543e135c8a9ec252b1d64201" />
+                <section title="Vertex" ref="triMesh_8h.html#ab68e11af2d2fafc83ac07bb0c2cd0254" />
+              </section>
+            </section>
+            <section title="main.cpp" ref="main_8cpp.html">
+              <section title="main" ref="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" />
+              <section title="usage" ref="main_8cpp.html#a1ad940455be56209415d328d78622715" />
+            </section>
+            <section title="moc_my_main_window.cxx" ref="moc__my__main__window_8cxx.html" />
+            <section title="moc_my_scene.cxx" ref="moc__my__scene_8cxx.html" />
+            <section title="my_main_window.cpp" ref="my__main__window_8cpp.html" />
+            <section title="my_main_window.h" ref="my__main__window_8h.html">
+              <section title="MyMainWindow" ref="classMyMainWindow.html">
+                <section title="MyMainWindow" ref="classMyMainWindow.html#a695339a56877e536d37c63ceb88088f9" />
+                <section title="slotAbout" ref="classMyMainWindow.html#acbae9d2dda0f04dda1722c45606b8881" />
+                <section title="_myScene" ref="classMyMainWindow.html#a0d7ebbd64ecf5e3e19d566c0ddfd6e6a" />
+                <section title="_ui" ref="classMyMainWindow.html#aa85150e2cec240e1522e6c0025939386" />
+              </section>
+            </section>
+            <section title="my_object3d.cpp" ref="my__object3d_8cpp.html">
+              <section title="operator&lt;&lt;" ref="my__object3d_8cpp.html#ae84f28dc392fc50e897f2150281c6db5" />
+            </section>
+            <section title="my_object3d.h" ref="my__object3d_8h.html">
+              <section title="Object3D" ref="classObject3D.html">
+                <section title="Object3D" ref="classObject3D.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b" />
+                <section title="~Object3D" ref="classObject3D.html#a73b016a1aa7eb3be3c49671f3054565d" />
+                <section title="draw" ref="classObject3D.html#a684fd3d4f083db533f855430e97d19f7" />
+                <section title="drawNormals" ref="classObject3D.html#a821f2ce108f100575befb2355cd3cd0f" />
+                <section title="extendBoundingBox" ref="classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" />
+                <section title="getBoundingBoxCenter" ref="classObject3D.html#a0f8f06be2cdbaac07e7f3de6143ffe85" />
+                <section title="getName" ref="classObject3D.html#aa80515b56146b062e55d91c01cbbba02" />
+                <section title="setName" ref="classObject3D.html#abe17f09bc38e52115b56cddba2d536b8" />
+                <section title="toOStream" ref="classObject3D.html#aa98582d326ed1d3d8987f44a542efa65" />
+                <section title="toString" ref="classObject3D.html#a1847587421f8a45650632dc4358f163f" />
+                <section title="operator&lt;&lt;" ref="classObject3D.html#ae84f28dc392fc50e897f2150281c6db5" />
+                <section title="_bBempty" ref="classObject3D.html#a46cb707a35870d0e585ecb7674bb049c" />
+                <section title="_bBoxMax" ref="classObject3D.html#a4ed5d3a72f81cd9d9607b04ca524eea6" />
+                <section title="_bBoxMin" ref="classObject3D.html#a7f30c09ab6671a937c35bd6281d91c17" />
+                <section title="_name" ref="classObject3D.html#aeef6c2e09d0835fb66070aa217e2a43d" />
+              </section>
+              <section title="PI" ref="my__object3d_8h.html#a598a3330b3c21701223ee0ca14316eca" />
+              <section title="operator&lt;&lt;" ref="my__object3d_8h.html#ae84f28dc392fc50e897f2150281c6db5" />
+            </section>
+            <section title="my_qglviewer.cpp" ref="my__qglviewer_8cpp.html" />
+            <section title="my_qglviewer.h" ref="my__qglviewer_8h.html">
+              <section title="MyQGLViewer" ref="classMyQGLViewer.html">
+                <section title="MyQGLViewer" ref="classMyQGLViewer.html#aa2e94685fc91a2f4e0e4e909f079eb13" />
+                <section title="draw" ref="classMyQGLViewer.html#a5119027de225936b837f689d0f7ecc1e" />
+                <section title="init" ref="classMyQGLViewer.html#af231a0313ce6839d6fcd5b1f0fbcc04d" />
+                <section title="keyPressEvent" ref="classMyQGLViewer.html#a85151895c53f940fda4e69b7805be7d6" />
+                <section title="setMyScene" ref="classMyQGLViewer.html#a8e959c24b6541e198de74a83a014c77e" />
+                <section title="_myScene" ref="classMyQGLViewer.html#afdd0d1f32bb1699b94b272413189607f" />
+              </section>
+            </section>
+            <section title="my_scene.cpp" ref="my__scene_8cpp.html" />
+            <section title="my_scene.h" ref="my__scene_8h.html">
+              <section title="MyScene" ref="classMyScene.html">
+                <section title="displayModeType" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dd">
+                  <section title="WIREFRAME" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda9522de35cfc340248e61351c071409d2" />
+                  <section title="SMOOTH" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda495d6276ea59a2af6cb3111c7d5751a4" />
+                  <section title="NORMALS" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda00a32d4e085ae0a3b578dd69a6d042ca" />
+                </section>
+                <section title="MyScene" ref="classMyScene.html#a6b67e5428ba302a5808661cd2bbb517c" />
+                <section title="~MyScene" ref="classMyScene.html#a0e6e8660d77680f29de571fa2e966a64" />
+                <section title="addObject" ref="classMyScene.html#ac831be74049ad54603badd0fef4d3b71" />
+                <section title="currentObject" ref="classMyScene.html#a223e11b9e24ae03887645ec396c2729a" />
+                <section title="displayMode" ref="classMyScene.html#afb791beceea5de9f0dc8fb47b5ec76c8" />
+                <section title="draw" ref="classMyScene.html#a11c35160110cfedb595e405077564bd7" />
+                <section title="init" ref="classMyScene.html#ab4f8f47610059e0eaaf07601a8225691" />
+                <section title="keyPressEvent" ref="classMyScene.html#a9ba290c04395ddb516325e2c23bbac7d" />
+                <section title="radius" ref="classMyScene.html#aeedf698dbf5c3cf8f7c4cbc22036a57e" />
+                <section title="radiusIncr" ref="classMyScene.html#a782e87414a79c87ff17778c2c6c6d183" />
+                <section title="radiusMax" ref="classMyScene.html#a59c4d9a72e36fae1c23cc6bdfcbe60ac" />
+                <section title="radiusMin" ref="classMyScene.html#add386630678eee06fc1aa28ca937cf73" />
+                <section title="setCurrentObject" ref="classMyScene.html#a73d73f5a7ce4c3ba4878718fdd8951a7" />
+                <section title="setDisplayMode" ref="classMyScene.html#a77e9102cef13e8bde68a8f799ee3604d" />
+                <section title="setRadius" ref="classMyScene.html#abfbf9297e676d8a5601040d62f8733cf" />
+                <section title="sigCurrentObjectChanged" ref="classMyScene.html#a3ef1135ffe93af395024dda7d00b9c1c" />
+                <section title="sigDisplayModeChanged" ref="classMyScene.html#ae304d120bad0d657422a516575eb7b86" />
+                <section title="sigDisplayNormalsChanged" ref="classMyScene.html#a03b09d59391e3558752ea40560bdb856" />
+                <section title="sigFlipNormalsChanged" ref="classMyScene.html#a20c130ec4789144432c6785f2df39e84" />
+                <section title="sigRadiusChanged" ref="classMyScene.html#aa3948a6670bb04fc9ac89172d18575ce" />
+                <section title="sigSmoothChanged" ref="classMyScene.html#a192763333c954d7a44abb9eb7382d3be" />
+                <section title="sigWireframeChanged" ref="classMyScene.html#a7a37834e7a3efeb4fe4be9c69bcade0d" />
+                <section title="slotSetCurrentObject" ref="classMyScene.html#a51fe7bb581b5ace63cea7fd6dec49ada" />
+                <section title="slotSetDisplayMode" ref="classMyScene.html#abe49f17d3e74e03a8df2bf66841cdd0f" />
+                <section title="slotSetDisplayNormals" ref="classMyScene.html#ad422ee6a76dca6ad7d1bac7da9d42fe3" />
+                <section title="slotSetFlipNormals" ref="classMyScene.html#ac9f701c50f43ff1e5c09b811b8d649c1" />
+                <section title="slotSetRadius" ref="classMyScene.html#ac1e81aa30f27b71638b774d9723d7e7a" />
+                <section title="slotSetSmooth" ref="classMyScene.html#a743ac1b6720dff62a660b36458be618a" />
+                <section title="slotSetWireframe" ref="classMyScene.html#ace3a90ce717fcdf20d1c6bc97255fb80" />
+                <section title="_currentObject" ref="classMyScene.html#a29e1f44881eb2c4bbbe1008b95da5388" />
+                <section title="_displayMode" ref="classMyScene.html#a53b8b43c74f584535b56f12589298a04" />
+                <section title="_displayWireframe" ref="classMyScene.html#a3120eeaf5a70b46a163b5140daaca82d" />
+                <section title="_normalsFlipped" ref="classMyScene.html#ad8609451844f7f32317678e66ebc48ee" />
+                <section title="_objects" ref="classMyScene.html#af652aa952b837a86aa1ae7392ce67db8" />
+                <section title="_radius" ref="classMyScene.html#a711e30a7d5a84e70acd9c623607533f6" />
+                <section title="_radiusIncr" ref="classMyScene.html#ab0bea34df9bdd5203bcf6ead822ee0c4" />
+                <section title="_radiusMax" ref="classMyScene.html#aba71c91a332e2ce9ffe4ed79089611ab" />
+                <section title="_radiusMin" ref="classMyScene.html#a1812c153076757914f96be0cf1ee7d63" />
+              </section>
+            </section>
+            <section title="ui_my_gui_form.h" ref="ui__my__gui__form_8h.html">
+              <section title="Ui_MainWindow" ref="classUi__MainWindow.html">
+                <section title="retranslateUi" ref="classUi__MainWindow.html#a097dd160c3534a204904cb374412c618" />
+                <section title="setupUi" ref="classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58" />
+                <section title="actionAbout" ref="classUi__MainWindow.html#abdf2b43167c2cd0d3405f90b8c30e934" />
+                <section title="actionOpen" ref="classUi__MainWindow.html#a5772f39001f62b7f601aafe72caa10c0" />
+                <section title="actionOpen_off" ref="classUi__MainWindow.html#a224858a2b2e21ad5743487ba4bc498f5" />
+                <section title="actionQuit" ref="classUi__MainWindow.html#a188c243f36a2dbc10e4e2a0ad94273b1" />
+                <section title="centralwidget" ref="classUi__MainWindow.html#a356f1cf3ebda15f1fac59467ee081b74" />
+                <section title="checkBox" ref="classUi__MainWindow.html#ae8154204ed56489a091cf3a81af1f996" />
+                <section title="checkBox_2" ref="classUi__MainWindow.html#a42f54d4275ffecc52ea117a43a2a4def" />
+                <section title="checkBox_3" ref="classUi__MainWindow.html#a7a0d575eebed36eac1592982b62ea449" />
+                <section title="checkBox_flipnormals" ref="classUi__MainWindow.html#a05bbfa9995f26bb81843cdd0442ad8d4" />
+                <section title="checkBox_normals" ref="classUi__MainWindow.html#a32dff035f79e6383622134a92563058c" />
+                <section title="checkBox_smooth" ref="classUi__MainWindow.html#a32b578d8fd2483966d74642df908f56d" />
+                <section title="checkBox_wireframe" ref="classUi__MainWindow.html#a39878168f2396b45929a145c87461243" />
+                <section title="hboxLayout" ref="classUi__MainWindow.html#a31d285ec7c66c071800632d96d856ca4" />
+                <section title="horizontalLayout" ref="classUi__MainWindow.html#acd6fdc9ebacc4b25b834162380d75ce8" />
+                <section title="horizontalLayout_2" ref="classUi__MainWindow.html#a80867018070156432923d0266cc9fe25" />
+                <section title="horizontalLayout_5" ref="classUi__MainWindow.html#a14c9d4842c3e97e16e7873ef0aecdb1e" />
+                <section title="horizontalSpacer" ref="classUi__MainWindow.html#a7871ea8c4b6c595d7ccd53960b344719" />
+                <section title="label" ref="classUi__MainWindow.html#ad9c89133780f28e6efa2ec17ceb9cff5" />
+                <section title="menubar" ref="classUi__MainWindow.html#adf43d9a67adaec750aaa956b5e082f09" />
+                <section title="menuFile" ref="classUi__MainWindow.html#a7ba84cb4cdd6a12dc83bf4e100bd8d80" />
+                <section title="menuHelp" ref="classUi__MainWindow.html#ab95dbfbb0550206aeac76db36f491548" />
+                <section title="radiusSpinBox" ref="classUi__MainWindow.html#a7ee1cfc185d084eebcc86ca9fc422c58" />
+                <section title="spacerItem" ref="classUi__MainWindow.html#af00b077691d1f8fac3fb2ad4a78b55af" />
+                <section title="statusbar" ref="classUi__MainWindow.html#a1687cceb1e2787aa1f83e50433943a91" />
+                <section title="vboxLayout" ref="classUi__MainWindow.html#a3260f8759d997f75cf8450d3728639b3" />
+                <section title="verticalLayout" ref="classUi__MainWindow.html#aecd96a04789fcfec3f98d80390ad8184" />
+                <section title="verticalLayout_2" ref="classUi__MainWindow.html#a0c01bad60d9f422a1258e710635a2f65" />
+                <section title="verticalLayout_4" ref="classUi__MainWindow.html#a6f40fc110b15410c00837a446d57bdbe" />
+                <section title="viewer" ref="classUi__MainWindow.html#a1af575db6e55bcd6c4adcf97dc1910b1" />
+              </section>
+              <section title="MainWindow" ref="classUi_1_1MainWindow.html" />
+            </section>
+          </section>
+          <section title="File Members" ref="globals.html">
+            <section title="All" ref="globals.html" />
+            <section title="Functions" ref="globals_func.html" />
+            <section title="Variables" ref="globals_vars.html" />
+            <section title="Typedefs" ref="globals_type.html" />
+            <section title="Macros" ref="globals_defs.html" />
+          </section>
+        </section>
+      </section>
+    </toc>
+    <keywords>
+      <keyword name="COMPILER_ID" id="CMakeCCompilerId.c::COMPILER_ID" ref="CMakeCCompilerId_8c.html#a81dee0709ded976b2e0319239f72d174" />
+      <keyword name="PLATFORM_ID" id="CMakeCCompilerId.c::PLATFORM_ID" ref="CMakeCCompilerId_8c.html#adbc5372f40838899018fadbc89bd588b" />
+      <keyword name="ARCHITECTURE_ID" id="CMakeCCompilerId.c::ARCHITECTURE_ID" ref="CMakeCCompilerId_8c.html#aba35d0d200deaeb06aee95ca297acb28" />
+      <keyword name="DEC" id="CMakeCCompilerId.c::DEC" ref="CMakeCCompilerId_8c.html#ad1280362da42492bbc11aa78cbf776ad" />
+      <keyword name="HEX" id="CMakeCCompilerId.c::HEX" ref="CMakeCCompilerId_8c.html#a46d5d95daa1bef867bd0179594310ed5" />
+      <keyword name="main" id="CMakeCCompilerId.c::main" ref="CMakeCCompilerId_8c.html#a0ddf1224851353fc92bfbff6f499fa97" />
+      <keyword name="info_compiler" id="CMakeCCompilerId.c::info_compiler" ref="CMakeCCompilerId_8c.html#a4b0efeb7a5d59313986b3a0390f050f6" />
+      <keyword name="info_platform" id="CMakeCCompilerId.c::info_platform" ref="CMakeCCompilerId_8c.html#a2321403dee54ee23f0c2fa849c60f7d4" />
+      <keyword name="info_arch" id="CMakeCCompilerId.c::info_arch" ref="CMakeCCompilerId_8c.html#a59647e99d304ed33b15cb284c27ed391" />
+      <keyword name="COMPILER_ID" id="CMakeCXXCompilerId.cpp::COMPILER_ID" ref="CMakeCXXCompilerId_8cpp.html#a81dee0709ded976b2e0319239f72d174" />
+      <keyword name="PLATFORM_ID" id="CMakeCXXCompilerId.cpp::PLATFORM_ID" ref="CMakeCXXCompilerId_8cpp.html#adbc5372f40838899018fadbc89bd588b" />
+      <keyword name="ARCHITECTURE_ID" id="CMakeCXXCompilerId.cpp::ARCHITECTURE_ID" ref="CMakeCXXCompilerId_8cpp.html#aba35d0d200deaeb06aee95ca297acb28" />
+      <keyword name="DEC" id="CMakeCXXCompilerId.cpp::DEC" ref="CMakeCXXCompilerId_8cpp.html#ad1280362da42492bbc11aa78cbf776ad" />
+      <keyword name="HEX" id="CMakeCXXCompilerId.cpp::HEX" ref="CMakeCXXCompilerId_8cpp.html#a46d5d95daa1bef867bd0179594310ed5" />
+      <keyword name="main" id="CMakeCXXCompilerId.cpp::main" ref="CMakeCXXCompilerId_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" />
+      <keyword name="info_compiler" id="CMakeCXXCompilerId.cpp::info_compiler" ref="CMakeCXXCompilerId_8cpp.html#a4b0efeb7a5d59313986b3a0390f050f6" />
+      <keyword name="info_platform" id="CMakeCXXCompilerId.cpp::info_platform" ref="CMakeCXXCompilerId_8cpp.html#a2321403dee54ee23f0c2fa849c60f7d4" />
+      <keyword name="info_arch" id="CMakeCXXCompilerId.cpp::info_arch" ref="CMakeCXXCompilerId_8cpp.html#a59647e99d304ed33b15cb284c27ed391" />
+      <keyword name="usage" id="main.cpp::usage" ref="main_8cpp.html#a1ad940455be56209415d328d78622715" />
+      <keyword name="main" id="main.cpp::main" ref="main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97" />
+      <keyword name="operator&lt;&lt;" id="my_object3d.cpp::operator&lt;&lt;" ref="my__object3d_8cpp.html#ae84f28dc392fc50e897f2150281c6db5" />
+      <keyword name="PI" id="my_object3d.h::PI" ref="my__object3d_8h.html#a598a3330b3c21701223ee0ca14316eca" />
+      <keyword name="operator&lt;&lt;" id="my_object3d.h::operator&lt;&lt;" ref="my__object3d_8h.html#ae84f28dc392fc50e897f2150281c6db5" />
+      <keyword name="Vertex" id="triMesh.h::Vertex" ref="triMesh_8h.html#ab68e11af2d2fafc83ac07bb0c2cd0254" />
+      <keyword name="Normal" id="triMesh.h::Normal" ref="triMesh_8h.html#a36460bbb80d099954f507c10d6d4dce9" />
+      <keyword name="Triangle" id="triMesh.h::Triangle" ref="triMesh_8h.html#a5b9ef839543e135c8a9ec252b1d64201" />
+      <keyword name="Cube" id="Cube" ref="classCube.html" />
+      <keyword name="Cube" id="Cube::Cube" ref="classCube.html#a06f3d86fb63e3aad08623610aa3c17b4" />
+      <keyword name="~Cube" id="Cube::~Cube" ref="classCube.html#a600d629a60344171d18ae77b3fb43912" />
+      <keyword name="TriMesh" id="TriMesh::TriMesh" ref="classTriMesh.html#a826986fcfb35b980cc02b99824f691f0" />
+      <keyword name="~TriMesh" id="TriMesh::~TriMesh" ref="classTriMesh.html#a30eb61f20aaf4d37a8185843980638ee" />
+      <keyword name="draw" id="TriMesh::draw" ref="classTriMesh.html#a16398a072c5f6b923d60931df6643838" />
+      <keyword name="drawNormals" id="TriMesh::drawNormals" ref="classTriMesh.html#ad4f59396283a880584e898f63a01670d" />
+      <keyword name="drawVertices" id="TriMesh::drawVertices" ref="classTriMesh.html#a74128459efb1828e4bb8a5c09b4f0c40" />
+      <keyword name="addVertex" id="TriMesh::addVertex" ref="classTriMesh.html#ae0d2c0bdf6b91931ee86aa51c8bfc29d" />
+      <keyword name="addVertex" id="TriMesh::addVertex" ref="classTriMesh.html#a78f595a1296f700c87454c0923b157cf" />
+      <keyword name="addTriangle" id="TriMesh::addTriangle" ref="classTriMesh.html#af42d53d768083eb29b591a712037fcef" />
+      <keyword name="addTriangle" id="TriMesh::addTriangle" ref="classTriMesh.html#a2cc40e62813ae3737ea8498fdba9ab1f" />
+      <keyword name="addNormalT" id="TriMesh::addNormalT" ref="classTriMesh.html#a32967a7d13c9cecd5ba93a89e0409f7d" />
+      <keyword name="addNormalV" id="TriMesh::addNormalV" ref="classTriMesh.html#a36f8783ffc98a97b5b022060609b7c55" />
+      <keyword name="getVertex" id="TriMesh::getVertex" ref="classTriMesh.html#aa939c68cb0c594b9747a5668eaa67a1d" />
+      <keyword name="toString" id="TriMesh::toString" ref="classTriMesh.html#a1b5ffabc6ca61838a769a0f94a7d0034" />
+      <keyword name="toOStream" id="TriMesh::toOStream" ref="classTriMesh.html#a1d6593d6800d384870c666f5754c3041" />
+      <keyword name="computeBoundingBox" id="TriMesh::computeBoundingBox" ref="classTriMesh.html#af2cb6957cb485045567e17c3ffb932c0" />
+      <keyword name="computeNormalsT" id="TriMesh::computeNormalsT" ref="classTriMesh.html#a7a0ccea06db5bee5972cf601bd48510a" />
+      <keyword name="computeNormalsV" id="TriMesh::computeNormalsV" ref="classTriMesh.html#a2afd756d3720ffa295ad29bab3d3a77e" />
+      <keyword name="normalize" id="TriMesh::normalize" ref="classTriMesh.html#a361e706dd2186cf6801097177b144bb6" />
+      <keyword name="Object3D" id="Object3D::Object3D" ref="classObject3D.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b" />
+      <keyword name="~Object3D" id="Object3D::~Object3D" ref="classObject3D.html#a73b016a1aa7eb3be3c49671f3054565d" />
+      <keyword name="getName" id="Object3D::getName" ref="classObject3D.html#aa80515b56146b062e55d91c01cbbba02" />
+      <keyword name="setName" id="Object3D::setName" ref="classObject3D.html#abe17f09bc38e52115b56cddba2d536b8" />
+      <keyword name="getBoundingBoxCenter" id="Object3D::getBoundingBoxCenter" ref="classObject3D.html#a0f8f06be2cdbaac07e7f3de6143ffe85" />
+      <keyword name="extendBoundingBox" id="Object3D::extendBoundingBox" ref="classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" />
+      <keyword name="_vertices" id="TriMesh::_vertices" ref="classTriMesh.html#ac8b70cd7c38760ae52b626d869cdcade" />
+      <keyword name="_triangles" id="TriMesh::_triangles" ref="classTriMesh.html#a59cdc5948dea9d5579311f3dbc34bde1" />
+      <keyword name="_normalsT" id="TriMesh::_normalsT" ref="classTriMesh.html#a8c30d4188c9532763e31dba7a542f14a" />
+      <keyword name="_normalsV" id="TriMesh::_normalsV" ref="classTriMesh.html#ad260f3f29ed0994c656a4affdfc82008" />
+      <keyword name="_name" id="Object3D::_name" ref="classObject3D.html#aeef6c2e09d0835fb66070aa217e2a43d" />
+      <keyword name="_bBoxMin" id="Object3D::_bBoxMin" ref="classObject3D.html#a7f30c09ab6671a937c35bd6281d91c17" />
+      <keyword name="_bBoxMax" id="Object3D::_bBoxMax" ref="classObject3D.html#a4ed5d3a72f81cd9d9607b04ca524eea6" />
+      <keyword name="_bBempty" id="Object3D::_bBempty" ref="classObject3D.html#a46cb707a35870d0e585ecb7674bb049c" />
+      <keyword name="MyMainWindow" id="MyMainWindow" ref="classMyMainWindow.html" />
+      <keyword name="slotAbout" id="MyMainWindow::slotAbout" ref="classMyMainWindow.html#acbae9d2dda0f04dda1722c45606b8881" />
+      <keyword name="MyMainWindow" id="MyMainWindow::MyMainWindow" ref="classMyMainWindow.html#a695339a56877e536d37c63ceb88088f9" />
+      <keyword name="_ui" id="MyMainWindow::_ui" ref="classMyMainWindow.html#aa85150e2cec240e1522e6c0025939386" />
+      <keyword name="_myScene" id="MyMainWindow::_myScene" ref="classMyMainWindow.html#a0d7ebbd64ecf5e3e19d566c0ddfd6e6a" />
+      <keyword name="MyQGLViewer" id="MyQGLViewer" ref="classMyQGLViewer.html" />
+      <keyword name="MyQGLViewer" id="MyQGLViewer::MyQGLViewer" ref="classMyQGLViewer.html#aa2e94685fc91a2f4e0e4e909f079eb13" />
+      <keyword name="setMyScene" id="MyQGLViewer::setMyScene" ref="classMyQGLViewer.html#a8e959c24b6541e198de74a83a014c77e" />
+      <keyword name="init" id="MyQGLViewer::init" ref="classMyQGLViewer.html#af231a0313ce6839d6fcd5b1f0fbcc04d" />
+      <keyword name="draw" id="MyQGLViewer::draw" ref="classMyQGLViewer.html#a5119027de225936b837f689d0f7ecc1e" />
+      <keyword name="keyPressEvent" id="MyQGLViewer::keyPressEvent" ref="classMyQGLViewer.html#a85151895c53f940fda4e69b7805be7d6" />
+      <keyword name="_myScene" id="MyQGLViewer::_myScene" ref="classMyQGLViewer.html#afdd0d1f32bb1699b94b272413189607f" />
+      <keyword name="MyScene" id="MyScene" ref="classMyScene.html" />
+      <keyword name="slotSetCurrentObject" id="MyScene::slotSetCurrentObject" ref="classMyScene.html#a51fe7bb581b5ace63cea7fd6dec49ada" />
+      <keyword name="slotSetDisplayMode" id="MyScene::slotSetDisplayMode" ref="classMyScene.html#abe49f17d3e74e03a8df2bf66841cdd0f" />
+      <keyword name="slotSetRadius" id="MyScene::slotSetRadius" ref="classMyScene.html#ac1e81aa30f27b71638b774d9723d7e7a" />
+      <keyword name="slotSetWireframe" id="MyScene::slotSetWireframe" ref="classMyScene.html#ace3a90ce717fcdf20d1c6bc97255fb80" />
+      <keyword name="slotSetSmooth" id="MyScene::slotSetSmooth" ref="classMyScene.html#a743ac1b6720dff62a660b36458be618a" />
+      <keyword name="slotSetDisplayNormals" id="MyScene::slotSetDisplayNormals" ref="classMyScene.html#ad422ee6a76dca6ad7d1bac7da9d42fe3" />
+      <keyword name="slotSetFlipNormals" id="MyScene::slotSetFlipNormals" ref="classMyScene.html#ac9f701c50f43ff1e5c09b811b8d649c1" />
+      <keyword name="sigCurrentObjectChanged" id="MyScene::sigCurrentObjectChanged" ref="classMyScene.html#a3ef1135ffe93af395024dda7d00b9c1c" />
+      <keyword name="sigDisplayModeChanged" id="MyScene::sigDisplayModeChanged" ref="classMyScene.html#ae304d120bad0d657422a516575eb7b86" />
+      <keyword name="sigRadiusChanged" id="MyScene::sigRadiusChanged" ref="classMyScene.html#aa3948a6670bb04fc9ac89172d18575ce" />
+      <keyword name="sigWireframeChanged" id="MyScene::sigWireframeChanged" ref="classMyScene.html#a7a37834e7a3efeb4fe4be9c69bcade0d" />
+      <keyword name="sigSmoothChanged" id="MyScene::sigSmoothChanged" ref="classMyScene.html#a192763333c954d7a44abb9eb7382d3be" />
+      <keyword name="sigDisplayNormalsChanged" id="MyScene::sigDisplayNormalsChanged" ref="classMyScene.html#a03b09d59391e3558752ea40560bdb856" />
+      <keyword name="sigFlipNormalsChanged" id="MyScene::sigFlipNormalsChanged" ref="classMyScene.html#a20c130ec4789144432c6785f2df39e84" />
+      <keyword name="MyScene" id="MyScene::MyScene" ref="classMyScene.html#a6b67e5428ba302a5808661cd2bbb517c" />
+      <keyword name="~MyScene" id="MyScene::~MyScene" ref="classMyScene.html#a0e6e8660d77680f29de571fa2e966a64" />
+      <keyword name="setCurrentObject" id="MyScene::setCurrentObject" ref="classMyScene.html#a73d73f5a7ce4c3ba4878718fdd8951a7" />
+      <keyword name="currentObject" id="MyScene::currentObject" ref="classMyScene.html#a223e11b9e24ae03887645ec396c2729a" />
+      <keyword name="setDisplayMode" id="MyScene::setDisplayMode" ref="classMyScene.html#a77e9102cef13e8bde68a8f799ee3604d" />
+      <keyword name="displayMode" id="MyScene::displayMode" ref="classMyScene.html#afb791beceea5de9f0dc8fb47b5ec76c8" />
+      <keyword name="setRadius" id="MyScene::setRadius" ref="classMyScene.html#abfbf9297e676d8a5601040d62f8733cf" />
+      <keyword name="radius" id="MyScene::radius" ref="classMyScene.html#aeedf698dbf5c3cf8f7c4cbc22036a57e" />
+      <keyword name="radiusMin" id="MyScene::radiusMin" ref="classMyScene.html#add386630678eee06fc1aa28ca937cf73" />
+      <keyword name="radiusMax" id="MyScene::radiusMax" ref="classMyScene.html#a59c4d9a72e36fae1c23cc6bdfcbe60ac" />
+      <keyword name="radiusIncr" id="MyScene::radiusIncr" ref="classMyScene.html#a782e87414a79c87ff17778c2c6c6d183" />
+      <keyword name="init" id="MyScene::init" ref="classMyScene.html#ab4f8f47610059e0eaaf07601a8225691" />
+      <keyword name="draw" id="MyScene::draw" ref="classMyScene.html#a11c35160110cfedb595e405077564bd7" />
+      <keyword name="addObject" id="MyScene::addObject" ref="classMyScene.html#ac831be74049ad54603badd0fef4d3b71" />
+      <keyword name="keyPressEvent" id="MyScene::keyPressEvent" ref="classMyScene.html#a9ba290c04395ddb516325e2c23bbac7d" />
+      <keyword name="_objects" id="MyScene::_objects" ref="classMyScene.html#af652aa952b837a86aa1ae7392ce67db8" />
+      <keyword name="_currentObject" id="MyScene::_currentObject" ref="classMyScene.html#a29e1f44881eb2c4bbbe1008b95da5388" />
+      <keyword name="_radius" id="MyScene::_radius" ref="classMyScene.html#a711e30a7d5a84e70acd9c623607533f6" />
+      <keyword name="_displayMode" id="MyScene::_displayMode" ref="classMyScene.html#a53b8b43c74f584535b56f12589298a04" />
+      <keyword name="_normalsFlipped" id="MyScene::_normalsFlipped" ref="classMyScene.html#ad8609451844f7f32317678e66ebc48ee" />
+      <keyword name="_displayWireframe" id="MyScene::_displayWireframe" ref="classMyScene.html#a3120eeaf5a70b46a163b5140daaca82d" />
+      <keyword name="_radiusMin" id="MyScene::_radiusMin" ref="classMyScene.html#a1812c153076757914f96be0cf1ee7d63" />
+      <keyword name="_radiusMax" id="MyScene::_radiusMax" ref="classMyScene.html#aba71c91a332e2ce9ffe4ed79089611ab" />
+      <keyword name="_radiusIncr" id="MyScene::_radiusIncr" ref="classMyScene.html#ab0bea34df9bdd5203bcf6ead822ee0c4" />
+      <keyword name="WIREFRAME" id="MyScene::WIREFRAME" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda9522de35cfc340248e61351c071409d2" />
+      <keyword name="SMOOTH" id="MyScene::SMOOTH" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda495d6276ea59a2af6cb3111c7d5751a4" />
+      <keyword name="NORMALS" id="MyScene::NORMALS" ref="classMyScene.html#a3f8ef7370a3e75fc5f278703cbcfa8dda00a32d4e085ae0a3b578dd69a6d042ca" />
+      <keyword name="Object3D" id="Object3D" ref="classObject3D.html" />
+      <keyword name="Object3D" id="Object3D::Object3D" ref="classObject3D.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b" />
+      <keyword name="~Object3D" id="Object3D::~Object3D" ref="classObject3D.html#a73b016a1aa7eb3be3c49671f3054565d" />
+      <keyword name="getName" id="Object3D::getName" ref="classObject3D.html#aa80515b56146b062e55d91c01cbbba02" />
+      <keyword name="setName" id="Object3D::setName" ref="classObject3D.html#abe17f09bc38e52115b56cddba2d536b8" />
+      <keyword name="draw" id="Object3D::draw" ref="classObject3D.html#a684fd3d4f083db533f855430e97d19f7" />
+      <keyword name="drawNormals" id="Object3D::drawNormals" ref="classObject3D.html#a821f2ce108f100575befb2355cd3cd0f" />
+      <keyword name="getBoundingBoxCenter" id="Object3D::getBoundingBoxCenter" ref="classObject3D.html#a0f8f06be2cdbaac07e7f3de6143ffe85" />
+      <keyword name="toString" id="Object3D::toString" ref="classObject3D.html#a1847587421f8a45650632dc4358f163f" />
+      <keyword name="toOStream" id="Object3D::toOStream" ref="classObject3D.html#aa98582d326ed1d3d8987f44a542efa65" />
+      <keyword name="extendBoundingBox" id="Object3D::extendBoundingBox" ref="classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" />
+      <keyword name="_name" id="Object3D::_name" ref="classObject3D.html#aeef6c2e09d0835fb66070aa217e2a43d" />
+      <keyword name="_bBoxMin" id="Object3D::_bBoxMin" ref="classObject3D.html#a7f30c09ab6671a937c35bd6281d91c17" />
+      <keyword name="_bBoxMax" id="Object3D::_bBoxMax" ref="classObject3D.html#a4ed5d3a72f81cd9d9607b04ca524eea6" />
+      <keyword name="_bBempty" id="Object3D::_bBempty" ref="classObject3D.html#a46cb707a35870d0e585ecb7674bb049c" />
+      <keyword name="operator&lt;&lt;" id="Object3D::operator&lt;&lt;" ref="classObject3D.html#ae84f28dc392fc50e897f2150281c6db5" />
+      <keyword name="Pyramid" id="Pyramid" ref="classPyramid.html" />
+      <keyword name="Pyramid" id="Pyramid::Pyramid" ref="classPyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49" />
+      <keyword name="~Pyramid" id="Pyramid::~Pyramid" ref="classPyramid.html#a4312cdd103b0794609354fccdc969092" />
+      <keyword name="TriMesh" id="TriMesh::TriMesh" ref="classTriMesh.html#a826986fcfb35b980cc02b99824f691f0" />
+      <keyword name="~TriMesh" id="TriMesh::~TriMesh" ref="classTriMesh.html#a30eb61f20aaf4d37a8185843980638ee" />
+      <keyword name="draw" id="TriMesh::draw" ref="classTriMesh.html#a16398a072c5f6b923d60931df6643838" />
+      <keyword name="drawNormals" id="TriMesh::drawNormals" ref="classTriMesh.html#ad4f59396283a880584e898f63a01670d" />
+      <keyword name="drawVertices" id="TriMesh::drawVertices" ref="classTriMesh.html#a74128459efb1828e4bb8a5c09b4f0c40" />
+      <keyword name="addVertex" id="TriMesh::addVertex" ref="classTriMesh.html#ae0d2c0bdf6b91931ee86aa51c8bfc29d" />
+      <keyword name="addVertex" id="TriMesh::addVertex" ref="classTriMesh.html#a78f595a1296f700c87454c0923b157cf" />
+      <keyword name="addTriangle" id="TriMesh::addTriangle" ref="classTriMesh.html#af42d53d768083eb29b591a712037fcef" />
+      <keyword name="addTriangle" id="TriMesh::addTriangle" ref="classTriMesh.html#a2cc40e62813ae3737ea8498fdba9ab1f" />
+      <keyword name="addNormalT" id="TriMesh::addNormalT" ref="classTriMesh.html#a32967a7d13c9cecd5ba93a89e0409f7d" />
+      <keyword name="addNormalV" id="TriMesh::addNormalV" ref="classTriMesh.html#a36f8783ffc98a97b5b022060609b7c55" />
+      <keyword name="getVertex" id="TriMesh::getVertex" ref="classTriMesh.html#aa939c68cb0c594b9747a5668eaa67a1d" />
+      <keyword name="toString" id="TriMesh::toString" ref="classTriMesh.html#a1b5ffabc6ca61838a769a0f94a7d0034" />
+      <keyword name="toOStream" id="TriMesh::toOStream" ref="classTriMesh.html#a1d6593d6800d384870c666f5754c3041" />
+      <keyword name="computeBoundingBox" id="TriMesh::computeBoundingBox" ref="classTriMesh.html#af2cb6957cb485045567e17c3ffb932c0" />
+      <keyword name="computeNormalsT" id="TriMesh::computeNormalsT" ref="classTriMesh.html#a7a0ccea06db5bee5972cf601bd48510a" />
+      <keyword name="computeNormalsV" id="TriMesh::computeNormalsV" ref="classTriMesh.html#a2afd756d3720ffa295ad29bab3d3a77e" />
+      <keyword name="normalize" id="TriMesh::normalize" ref="classTriMesh.html#a361e706dd2186cf6801097177b144bb6" />
+      <keyword name="Object3D" id="Object3D::Object3D" ref="classObject3D.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b" />
+      <keyword name="~Object3D" id="Object3D::~Object3D" ref="classObject3D.html#a73b016a1aa7eb3be3c49671f3054565d" />
+      <keyword name="getName" id="Object3D::getName" ref="classObject3D.html#aa80515b56146b062e55d91c01cbbba02" />
+      <keyword name="setName" id="Object3D::setName" ref="classObject3D.html#abe17f09bc38e52115b56cddba2d536b8" />
+      <keyword name="getBoundingBoxCenter" id="Object3D::getBoundingBoxCenter" ref="classObject3D.html#a0f8f06be2cdbaac07e7f3de6143ffe85" />
+      <keyword name="extendBoundingBox" id="Object3D::extendBoundingBox" ref="classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" />
+      <keyword name="_vertices" id="TriMesh::_vertices" ref="classTriMesh.html#ac8b70cd7c38760ae52b626d869cdcade" />
+      <keyword name="_triangles" id="TriMesh::_triangles" ref="classTriMesh.html#a59cdc5948dea9d5579311f3dbc34bde1" />
+      <keyword name="_normalsT" id="TriMesh::_normalsT" ref="classTriMesh.html#a8c30d4188c9532763e31dba7a542f14a" />
+      <keyword name="_normalsV" id="TriMesh::_normalsV" ref="classTriMesh.html#ad260f3f29ed0994c656a4affdfc82008" />
+      <keyword name="_name" id="Object3D::_name" ref="classObject3D.html#aeef6c2e09d0835fb66070aa217e2a43d" />
+      <keyword name="_bBoxMin" id="Object3D::_bBoxMin" ref="classObject3D.html#a7f30c09ab6671a937c35bd6281d91c17" />
+      <keyword name="_bBoxMax" id="Object3D::_bBoxMax" ref="classObject3D.html#a4ed5d3a72f81cd9d9607b04ca524eea6" />
+      <keyword name="_bBempty" id="Object3D::_bBempty" ref="classObject3D.html#a46cb707a35870d0e585ecb7674bb049c" />
+      <keyword name="TriMesh" id="TriMesh" ref="classTriMesh.html" />
+      <keyword name="TriMesh" id="TriMesh::TriMesh" ref="classTriMesh.html#a826986fcfb35b980cc02b99824f691f0" />
+      <keyword name="~TriMesh" id="TriMesh::~TriMesh" ref="classTriMesh.html#a30eb61f20aaf4d37a8185843980638ee" />
+      <keyword name="draw" id="TriMesh::draw" ref="classTriMesh.html#a16398a072c5f6b923d60931df6643838" />
+      <keyword name="drawNormals" id="TriMesh::drawNormals" ref="classTriMesh.html#ad4f59396283a880584e898f63a01670d" />
+      <keyword name="drawVertices" id="TriMesh::drawVertices" ref="classTriMesh.html#a74128459efb1828e4bb8a5c09b4f0c40" />
+      <keyword name="addVertex" id="TriMesh::addVertex" ref="classTriMesh.html#ae0d2c0bdf6b91931ee86aa51c8bfc29d" />
+      <keyword name="addVertex" id="TriMesh::addVertex" ref="classTriMesh.html#a78f595a1296f700c87454c0923b157cf" />
+      <keyword name="addTriangle" id="TriMesh::addTriangle" ref="classTriMesh.html#af42d53d768083eb29b591a712037fcef" />
+      <keyword name="addTriangle" id="TriMesh::addTriangle" ref="classTriMesh.html#a2cc40e62813ae3737ea8498fdba9ab1f" />
+      <keyword name="addNormalT" id="TriMesh::addNormalT" ref="classTriMesh.html#a32967a7d13c9cecd5ba93a89e0409f7d" />
+      <keyword name="addNormalV" id="TriMesh::addNormalV" ref="classTriMesh.html#a36f8783ffc98a97b5b022060609b7c55" />
+      <keyword name="getVertex" id="TriMesh::getVertex" ref="classTriMesh.html#aa939c68cb0c594b9747a5668eaa67a1d" />
+      <keyword name="toString" id="TriMesh::toString" ref="classTriMesh.html#a1b5ffabc6ca61838a769a0f94a7d0034" />
+      <keyword name="toOStream" id="TriMesh::toOStream" ref="classTriMesh.html#a1d6593d6800d384870c666f5754c3041" />
+      <keyword name="computeBoundingBox" id="TriMesh::computeBoundingBox" ref="classTriMesh.html#af2cb6957cb485045567e17c3ffb932c0" />
+      <keyword name="computeNormalsT" id="TriMesh::computeNormalsT" ref="classTriMesh.html#a7a0ccea06db5bee5972cf601bd48510a" />
+      <keyword name="computeNormalsV" id="TriMesh::computeNormalsV" ref="classTriMesh.html#a2afd756d3720ffa295ad29bab3d3a77e" />
+      <keyword name="normalize" id="TriMesh::normalize" ref="classTriMesh.html#a361e706dd2186cf6801097177b144bb6" />
+      <keyword name="Object3D" id="Object3D::Object3D" ref="classObject3D.html#ae3a1b17fb43ab59f5cf7b0ee21b9120b" />
+      <keyword name="~Object3D" id="Object3D::~Object3D" ref="classObject3D.html#a73b016a1aa7eb3be3c49671f3054565d" />
+      <keyword name="getName" id="Object3D::getName" ref="classObject3D.html#aa80515b56146b062e55d91c01cbbba02" />
+      <keyword name="setName" id="Object3D::setName" ref="classObject3D.html#abe17f09bc38e52115b56cddba2d536b8" />
+      <keyword name="getBoundingBoxCenter" id="Object3D::getBoundingBoxCenter" ref="classObject3D.html#a0f8f06be2cdbaac07e7f3de6143ffe85" />
+      <keyword name="_vertices" id="TriMesh::_vertices" ref="classTriMesh.html#ac8b70cd7c38760ae52b626d869cdcade" />
+      <keyword name="_triangles" id="TriMesh::_triangles" ref="classTriMesh.html#a59cdc5948dea9d5579311f3dbc34bde1" />
+      <keyword name="_normalsT" id="TriMesh::_normalsT" ref="classTriMesh.html#a8c30d4188c9532763e31dba7a542f14a" />
+      <keyword name="_normalsV" id="TriMesh::_normalsV" ref="classTriMesh.html#ad260f3f29ed0994c656a4affdfc82008" />
+      <keyword name="_name" id="Object3D::_name" ref="classObject3D.html#aeef6c2e09d0835fb66070aa217e2a43d" />
+      <keyword name="_bBoxMin" id="Object3D::_bBoxMin" ref="classObject3D.html#a7f30c09ab6671a937c35bd6281d91c17" />
+      <keyword name="_bBoxMax" id="Object3D::_bBoxMax" ref="classObject3D.html#a4ed5d3a72f81cd9d9607b04ca524eea6" />
+      <keyword name="_bBempty" id="Object3D::_bBempty" ref="classObject3D.html#a46cb707a35870d0e585ecb7674bb049c" />
+      <keyword name="extendBoundingBox" id="Object3D::extendBoundingBox" ref="classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" />
+      <keyword name="Ui_MainWindow" id="Ui_MainWindow" ref="classUi__MainWindow.html" />
+      <keyword name="setupUi" id="Ui_MainWindow::setupUi" ref="classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58" />
+      <keyword name="retranslateUi" id="Ui_MainWindow::retranslateUi" ref="classUi__MainWindow.html#a097dd160c3534a204904cb374412c618" />
+      <keyword name="actionQuit" id="Ui_MainWindow::actionQuit" ref="classUi__MainWindow.html#a188c243f36a2dbc10e4e2a0ad94273b1" />
+      <keyword name="actionOpen" id="Ui_MainWindow::actionOpen" ref="classUi__MainWindow.html#a5772f39001f62b7f601aafe72caa10c0" />
+      <keyword name="actionAbout" id="Ui_MainWindow::actionAbout" ref="classUi__MainWindow.html#abdf2b43167c2cd0d3405f90b8c30e934" />
+      <keyword name="actionOpen_off" id="Ui_MainWindow::actionOpen_off" ref="classUi__MainWindow.html#a224858a2b2e21ad5743487ba4bc498f5" />
+      <keyword name="centralwidget" id="Ui_MainWindow::centralwidget" ref="classUi__MainWindow.html#a356f1cf3ebda15f1fac59467ee081b74" />
+      <keyword name="vboxLayout" id="Ui_MainWindow::vboxLayout" ref="classUi__MainWindow.html#a3260f8759d997f75cf8450d3728639b3" />
+      <keyword name="viewer" id="Ui_MainWindow::viewer" ref="classUi__MainWindow.html#a1af575db6e55bcd6c4adcf97dc1910b1" />
+      <keyword name="hboxLayout" id="Ui_MainWindow::hboxLayout" ref="classUi__MainWindow.html#a31d285ec7c66c071800632d96d856ca4" />
+      <keyword name="horizontalLayout" id="Ui_MainWindow::horizontalLayout" ref="classUi__MainWindow.html#acd6fdc9ebacc4b25b834162380d75ce8" />
+      <keyword name="verticalLayout_2" id="Ui_MainWindow::verticalLayout_2" ref="classUi__MainWindow.html#a0c01bad60d9f422a1258e710635a2f65" />
+      <keyword name="checkBox" id="Ui_MainWindow::checkBox" ref="classUi__MainWindow.html#ae8154204ed56489a091cf3a81af1f996" />
+      <keyword name="checkBox_3" id="Ui_MainWindow::checkBox_3" ref="classUi__MainWindow.html#a7a0d575eebed36eac1592982b62ea449" />
+      <keyword name="checkBox_2" id="Ui_MainWindow::checkBox_2" ref="classUi__MainWindow.html#a42f54d4275ffecc52ea117a43a2a4def" />
+      <keyword name="spacerItem" id="Ui_MainWindow::spacerItem" ref="classUi__MainWindow.html#af00b077691d1f8fac3fb2ad4a78b55af" />
+      <keyword name="verticalLayout" id="Ui_MainWindow::verticalLayout" ref="classUi__MainWindow.html#aecd96a04789fcfec3f98d80390ad8184" />
+      <keyword name="checkBox_wireframe" id="Ui_MainWindow::checkBox_wireframe" ref="classUi__MainWindow.html#a39878168f2396b45929a145c87461243" />
+      <keyword name="checkBox_smooth" id="Ui_MainWindow::checkBox_smooth" ref="classUi__MainWindow.html#a32b578d8fd2483966d74642df908f56d" />
+      <keyword name="horizontalLayout_2" id="Ui_MainWindow::horizontalLayout_2" ref="classUi__MainWindow.html#a80867018070156432923d0266cc9fe25" />
+      <keyword name="checkBox_normals" id="Ui_MainWindow::checkBox_normals" ref="classUi__MainWindow.html#a32dff035f79e6383622134a92563058c" />
+      <keyword name="checkBox_flipnormals" id="Ui_MainWindow::checkBox_flipnormals" ref="classUi__MainWindow.html#a05bbfa9995f26bb81843cdd0442ad8d4" />
+      <keyword name="horizontalSpacer" id="Ui_MainWindow::horizontalSpacer" ref="classUi__MainWindow.html#a7871ea8c4b6c595d7ccd53960b344719" />
+      <keyword name="verticalLayout_4" id="Ui_MainWindow::verticalLayout_4" ref="classUi__MainWindow.html#a6f40fc110b15410c00837a446d57bdbe" />
+      <keyword name="horizontalLayout_5" id="Ui_MainWindow::horizontalLayout_5" ref="classUi__MainWindow.html#a14c9d4842c3e97e16e7873ef0aecdb1e" />
+      <keyword name="label" id="Ui_MainWindow::label" ref="classUi__MainWindow.html#ad9c89133780f28e6efa2ec17ceb9cff5" />
+      <keyword name="radiusSpinBox" id="Ui_MainWindow::radiusSpinBox" ref="classUi__MainWindow.html#a7ee1cfc185d084eebcc86ca9fc422c58" />
+      <keyword name="menubar" id="Ui_MainWindow::menubar" ref="classUi__MainWindow.html#adf43d9a67adaec750aaa956b5e082f09" />
+      <keyword name="menuHelp" id="Ui_MainWindow::menuHelp" ref="classUi__MainWindow.html#ab95dbfbb0550206aeac76db36f491548" />
+      <keyword name="menuFile" id="Ui_MainWindow::menuFile" ref="classUi__MainWindow.html#a7ba84cb4cdd6a12dc83bf4e100bd8d80" />
+      <keyword name="statusbar" id="Ui_MainWindow::statusbar" ref="classUi__MainWindow.html#a1687cceb1e2787aa1f83e50433943a91" />
+      <keyword name="Ui" id="Ui" ref="namespaceUi.html" />
+      <keyword name="Ui::MainWindow" id="Ui::MainWindow" ref="classUi_1_1MainWindow.html" />
+      <keyword name="setupUi" id="Ui_MainWindow::setupUi" ref="classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58" />
+      <keyword name="retranslateUi" id="Ui_MainWindow::retranslateUi" ref="classUi__MainWindow.html#a097dd160c3534a204904cb374412c618" />
+      <keyword name="actionQuit" id="Ui_MainWindow::actionQuit" ref="classUi__MainWindow.html#a188c243f36a2dbc10e4e2a0ad94273b1" />
+      <keyword name="actionOpen" id="Ui_MainWindow::actionOpen" ref="classUi__MainWindow.html#a5772f39001f62b7f601aafe72caa10c0" />
+      <keyword name="actionAbout" id="Ui_MainWindow::actionAbout" ref="classUi__MainWindow.html#abdf2b43167c2cd0d3405f90b8c30e934" />
+      <keyword name="actionOpen_off" id="Ui_MainWindow::actionOpen_off" ref="classUi__MainWindow.html#a224858a2b2e21ad5743487ba4bc498f5" />
+      <keyword name="centralwidget" id="Ui_MainWindow::centralwidget" ref="classUi__MainWindow.html#a356f1cf3ebda15f1fac59467ee081b74" />
+      <keyword name="vboxLayout" id="Ui_MainWindow::vboxLayout" ref="classUi__MainWindow.html#a3260f8759d997f75cf8450d3728639b3" />
+      <keyword name="viewer" id="Ui_MainWindow::viewer" ref="classUi__MainWindow.html#a1af575db6e55bcd6c4adcf97dc1910b1" />
+      <keyword name="hboxLayout" id="Ui_MainWindow::hboxLayout" ref="classUi__MainWindow.html#a31d285ec7c66c071800632d96d856ca4" />
+      <keyword name="horizontalLayout" id="Ui_MainWindow::horizontalLayout" ref="classUi__MainWindow.html#acd6fdc9ebacc4b25b834162380d75ce8" />
+      <keyword name="verticalLayout_2" id="Ui_MainWindow::verticalLayout_2" ref="classUi__MainWindow.html#a0c01bad60d9f422a1258e710635a2f65" />
+      <keyword name="checkBox" id="Ui_MainWindow::checkBox" ref="classUi__MainWindow.html#ae8154204ed56489a091cf3a81af1f996" />
+      <keyword name="checkBox_3" id="Ui_MainWindow::checkBox_3" ref="classUi__MainWindow.html#a7a0d575eebed36eac1592982b62ea449" />
+      <keyword name="checkBox_2" id="Ui_MainWindow::checkBox_2" ref="classUi__MainWindow.html#a42f54d4275ffecc52ea117a43a2a4def" />
+      <keyword name="spacerItem" id="Ui_MainWindow::spacerItem" ref="classUi__MainWindow.html#af00b077691d1f8fac3fb2ad4a78b55af" />
+      <keyword name="verticalLayout" id="Ui_MainWindow::verticalLayout" ref="classUi__MainWindow.html#aecd96a04789fcfec3f98d80390ad8184" />
+      <keyword name="checkBox_wireframe" id="Ui_MainWindow::checkBox_wireframe" ref="classUi__MainWindow.html#a39878168f2396b45929a145c87461243" />
+      <keyword name="checkBox_smooth" id="Ui_MainWindow::checkBox_smooth" ref="classUi__MainWindow.html#a32b578d8fd2483966d74642df908f56d" />
+      <keyword name="horizontalLayout_2" id="Ui_MainWindow::horizontalLayout_2" ref="classUi__MainWindow.html#a80867018070156432923d0266cc9fe25" />
+      <keyword name="checkBox_normals" id="Ui_MainWindow::checkBox_normals" ref="classUi__MainWindow.html#a32dff035f79e6383622134a92563058c" />
+      <keyword name="checkBox_flipnormals" id="Ui_MainWindow::checkBox_flipnormals" ref="classUi__MainWindow.html#a05bbfa9995f26bb81843cdd0442ad8d4" />
+      <keyword name="horizontalSpacer" id="Ui_MainWindow::horizontalSpacer" ref="classUi__MainWindow.html#a7871ea8c4b6c595d7ccd53960b344719" />
+      <keyword name="verticalLayout_4" id="Ui_MainWindow::verticalLayout_4" ref="classUi__MainWindow.html#a6f40fc110b15410c00837a446d57bdbe" />
+      <keyword name="horizontalLayout_5" id="Ui_MainWindow::horizontalLayout_5" ref="classUi__MainWindow.html#a14c9d4842c3e97e16e7873ef0aecdb1e" />
+      <keyword name="label" id="Ui_MainWindow::label" ref="classUi__MainWindow.html#ad9c89133780f28e6efa2ec17ceb9cff5" />
+      <keyword name="radiusSpinBox" id="Ui_MainWindow::radiusSpinBox" ref="classUi__MainWindow.html#a7ee1cfc185d084eebcc86ca9fc422c58" />
+      <keyword name="menubar" id="Ui_MainWindow::menubar" ref="classUi__MainWindow.html#adf43d9a67adaec750aaa956b5e082f09" />
+      <keyword name="menuHelp" id="Ui_MainWindow::menuHelp" ref="classUi__MainWindow.html#ab95dbfbb0550206aeac76db36f491548" />
+      <keyword name="menuFile" id="Ui_MainWindow::menuFile" ref="classUi__MainWindow.html#a7ba84cb4cdd6a12dc83bf4e100bd8d80" />
+      <keyword name="statusbar" id="Ui_MainWindow::statusbar" ref="classUi__MainWindow.html#a1687cceb1e2787aa1f83e50433943a91" />
+    </keywords>
+    <files>
+      <file>tabs.css</file>
+      <file>tab_a.png</file>
+      <file>tab_b.png</file>
+      <file>tab_h.png</file>
+      <file>tab_s.png</file>
+      <file>nav_h.png</file>
+      <file>nav_f.png</file>
+      <file>bc_s.png</file>
+      <file>doxygen.png</file>
+      <file>closed.png</file>
+      <file>open.png</file>
+      <file>bdwn.png</file>
+      <file>sync_on.png</file>
+      <file>sync_off.png</file>
+      <file>ftv2blank.png</file>
+      <file>ftv2doc.png</file>
+      <file>ftv2folderclosed.png</file>
+      <file>ftv2folderopen.png</file>
+      <file>ftv2ns.png</file>
+      <file>ftv2mo.png</file>
+      <file>ftv2cl.png</file>
+      <file>ftv2lastnode.png</file>
+      <file>ftv2link.png</file>
+      <file>ftv2mlastnode.png</file>
+      <file>ftv2mnode.png</file>
+      <file>ftv2node.png</file>
+      <file>ftv2plastnode.png</file>
+      <file>ftv2pnode.png</file>
+      <file>ftv2vertline.png</file>
+      <file>ftv2splitbar.png</file>
+      <file>doxygen.css</file>
+      <file>CMakeCCompilerId_8c_source.html</file>
+      <file>CMakeCXXCompilerId_8cpp_source.html</file>
+      <file>main_8cpp_source.html</file>
+      <file>moc__my__main__window_8cxx_source.html</file>
+      <file>moc__my__scene_8cxx_source.html</file>
+      <file>my__main__window_8cpp_source.html</file>
+      <file>my__main__window_8h_source.html</file>
+      <file>my__object3d_8cpp_source.html</file>
+      <file>my__object3d_8h_source.html</file>
+      <file>my__qglviewer_8cpp_source.html</file>
+      <file>my__qglviewer_8h_source.html</file>
+      <file>my__scene_8cpp_source.html</file>
+      <file>my__scene_8h_source.html</file>
+      <file>cube_8cpp_source.html</file>
+      <file>cube_8h_source.html</file>
+      <file>pyramid_8cpp_source.html</file>
+      <file>pyramid_8h_source.html</file>
+      <file>triMesh_8cpp_source.html</file>
+      <file>triMesh_8h_source.html</file>
+      <file>ui__my__gui__form_8h_source.html</file>
+      <file>CMakeCCompilerId_8c.html</file>
+      <file>CMakeCXXCompilerId_8cpp.html</file>
+      <file>main_8cpp.html</file>
+      <file>main_8cpp__incl.png</file>
+      <file>moc__my__main__window_8cxx.html</file>
+      <file>moc__my__main__window_8cxx__incl.png</file>
+      <file>moc__my__scene_8cxx.html</file>
+      <file>moc__my__scene_8cxx__incl.png</file>
+      <file>my__main__window_8cpp.html</file>
+      <file>my__main__window_8cpp__incl.png</file>
+      <file>my__main__window_8h.html</file>
+      <file>my__main__window_8h__incl.png</file>
+      <file>my__main__window_8h__dep__incl.png</file>
+      <file>my__object3d_8cpp.html</file>
+      <file>my__object3d_8cpp__incl.png</file>
+      <file>my__object3d_8cpp_ae84f28dc392fc50e897f2150281c6db5_cgraph.png</file>
+      <file>my__object3d_8h.html</file>
+      <file>my__object3d_8h__incl.png</file>
+      <file>my__object3d_8h__dep__incl.png</file>
+      <file>my__object3d_8h_ae84f28dc392fc50e897f2150281c6db5_cgraph.png</file>
+      <file>my__qglviewer_8cpp.html</file>
+      <file>my__qglviewer_8cpp__incl.png</file>
+      <file>my__qglviewer_8h.html</file>
+      <file>my__qglviewer_8h__incl.png</file>
+      <file>my__qglviewer_8h__dep__incl.png</file>
+      <file>my__scene_8cpp.html</file>
+      <file>my__scene_8cpp__incl.png</file>
+      <file>my__scene_8h.html</file>
+      <file>my__scene_8h__incl.png</file>
+      <file>my__scene_8h__dep__incl.png</file>
+      <file>cube_8cpp.html</file>
+      <file>cube_8cpp__incl.png</file>
+      <file>cube_8h.html</file>
+      <file>cube_8h__incl.png</file>
+      <file>cube_8h__dep__incl.png</file>
+      <file>pyramid_8cpp.html</file>
+      <file>pyramid_8cpp__incl.png</file>
+      <file>pyramid_8h.html</file>
+      <file>pyramid_8h__incl.png</file>
+      <file>pyramid_8h__dep__incl.png</file>
+      <file>triMesh_8cpp.html</file>
+      <file>triMesh_8cpp__incl.png</file>
+      <file>triMesh_8h.html</file>
+      <file>triMesh_8h__incl.png</file>
+      <file>triMesh_8h__dep__incl.png</file>
+      <file>ui__my__gui__form_8h.html</file>
+      <file>ui__my__gui__form_8h__incl.png</file>
+      <file>ui__my__gui__form_8h__dep__incl.png</file>
+      <file>classCube.html</file>
+      <file>classCube__inherit__graph.png</file>
+      <file>classCube__coll__graph.png</file>
+      <file>classCube_a06f3d86fb63e3aad08623610aa3c17b4_cgraph.png</file>
+      <file>classCube-members.html</file>
+      <file>classMyMainWindow.html</file>
+      <file>classMyMainWindow__inherit__graph.png</file>
+      <file>classMyMainWindow__coll__graph.png</file>
+      <file>classMyMainWindow_a695339a56877e536d37c63ceb88088f9_cgraph.png</file>
+      <file>classMyMainWindow-members.html</file>
+      <file>classMyQGLViewer.html</file>
+      <file>classMyQGLViewer__inherit__graph.png</file>
+      <file>classMyQGLViewer__coll__graph.png</file>
+      <file>classMyQGLViewer-members.html</file>
+      <file>classMyScene.html</file>
+      <file>classMyScene__inherit__graph.png</file>
+      <file>classMyScene__coll__graph.png</file>
+      <file>classMyScene_abfbf9297e676d8a5601040d62f8733cf_cgraph.png</file>
+      <file>classMyScene-members.html</file>
+      <file>classObject3D.html</file>
+      <file>classObject3D__inherit__graph.png</file>
+      <file>classObject3D-members.html</file>
+      <file>classPyramid.html</file>
+      <file>classPyramid__inherit__graph.png</file>
+      <file>classPyramid__coll__graph.png</file>
+      <file>classPyramid_aa78baa6faa1c3fbcca510e8ddf37de49_cgraph.png</file>
+      <file>classPyramid-members.html</file>
+      <file>classTriMesh.html</file>
+      <file>classTriMesh__inherit__graph.png</file>
+      <file>classTriMesh__coll__graph.png</file>
+      <file>classTriMesh_a2cc40e62813ae3737ea8498fdba9ab1f_cgraph.png</file>
+      <file>classTriMesh_ae0d2c0bdf6b91931ee86aa51c8bfc29d_cgraph.png</file>
+      <file>classTriMesh_a78f595a1296f700c87454c0923b157cf_cgraph.png</file>
+      <file>classTriMesh_af2cb6957cb485045567e17c3ffb932c0_cgraph.png</file>
+      <file>classTriMesh_a7a0ccea06db5bee5972cf601bd48510a_cgraph.png</file>
+      <file>classTriMesh_a2afd756d3720ffa295ad29bab3d3a77e_cgraph.png</file>
+      <file>classTriMesh_a361e706dd2186cf6801097177b144bb6_cgraph.png</file>
+      <file>classTriMesh_a1d6593d6800d384870c666f5754c3041_cgraph.png</file>
+      <file>classTriMesh-members.html</file>
+      <file>classUi__MainWindow.html</file>
+      <file>classUi__MainWindow__inherit__graph.png</file>
+      <file>classUi__MainWindow__coll__graph.png</file>
+      <file>classUi__MainWindow_acf4a0872c4c77d8f43a2ec66ed849b58_cgraph.png</file>
+      <file>classUi__MainWindow-members.html</file>
+      <file>namespaceUi.html</file>
+      <file>classUi_1_1MainWindow.html</file>
+      <file>classUi_1_1MainWindow__inherit__graph.png</file>
+      <file>classUi_1_1MainWindow__coll__graph.png</file>
+      <file>classUi_1_1MainWindow-members.html</file>
+      <file>graph_legend.png</file>
+      <file>graph_legend.html</file>
+      <file>dir_afc4d8475f9df919b61446569294b208.html</file>
+      <file>dir_afc4d8475f9df919b61446569294b208_dep.png</file>
+      <file>dir_017ad5e908c41501f6a06b5119b37293.html</file>
+      <file>dir_017ad5e908c41501f6a06b5119b37293_dep.png</file>
+      <file>dir_11b7bcac0662ed58fd1dbbaac618bebc.html</file>
+      <file>dir_11b7bcac0662ed58fd1dbbaac618bebc_dep.png</file>
+      <file>dir_ed2e317f7f7a316f9587a610d317353b.html</file>
+      <file>dir_ed2e317f7f7a316f9587a610d317353b_dep.png</file>
+      <file>dir_645ec83fa4e243a732144956da80a200.html</file>
+      <file>dir_645ec83fa4e243a732144956da80a200_dep.png</file>
+      <file>index.html</file>
+      <file>namespaces.html</file>
+      <file>annotated.html</file>
+      <file>classes.html</file>
+      <file>hierarchy.html</file>
+      <file>inherits.html</file>
+      <file>inherit_graph_0.png</file>
+      <file>inherit_graph_1.png</file>
+      <file>inherit_graph_2.png</file>
+      <file>inherit_graph_3.png</file>
+      <file>inherit_graph_4.png</file>
+      <file>functions.html</file>
+      <file>functions_func.html</file>
+      <file>functions_vars.html</file>
+      <file>functions_enum.html</file>
+      <file>functions_eval.html</file>
+      <file>functions_rela.html</file>
+      <file>files.html</file>
+      <file>globals.html</file>
+      <file>globals_func.html</file>
+      <file>globals_vars.html</file>
+      <file>globals_type.html</file>
+      <file>globals_defs.html</file>
+    </files>
+  </filterSection>
+</QtHelpProject>

@@ -1,0 +1,10 @@
+<map id="main.cpp" name="main.cpp">
+<area shape="rect" id="node5" href="$my__main__window_8h.html" title="Defines the main window composed of a Graphical User Interface and a 3D scene. " alt="" coords="1054,80,1188,107"/>
+<area shape="rect" id="node57" href="$my__object3d_8h.html" title="Defines a 3D object base. " alt="" coords="2733,379,2840,405"/>
+<area shape="rect" id="node69" href="$cube_8h.html" title="objects/cube.h" alt="" coords="2805,80,2912,107"/>
+<area shape="rect" id="node76" href="$pyramid_8h.html" title="objects/pyramid.h" alt="" coords="2936,80,3061,107"/>
+<area shape="rect" id="node10" href="$ui__my__gui__form_8h.html" title="ui_my_gui_form.h" alt="" coords="1357,155,1480,181"/>
+<area shape="rect" id="node44" href="$my__qglviewer_8h.html" title="Defines a custom viewer. " alt="" coords="2621,229,2731,256"/>
+<area shape="rect" id="node51" href="$my__scene_8h.html" title="Defines a custom 3D scene. " alt="" coords="2637,304,2731,331"/>
+<area shape="rect" id="node71" href="$triMesh_8h.html" title="triMesh.h" alt="" coords="2837,155,2912,181"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="my_object3d.h" name="my_object3d.h">
+<area shape="rect" id="node3" href="$my__scene_8h.html" title="Defines a custom 3D scene. " alt="" coords="508,80,601,107"/>
+<area shape="rect" id="node11" href="$main_8cpp.html" title="Declares an application, a main window and a 3D scene. " alt="" coords="415,379,488,405"/>
+<area shape="rect" id="node24" href="$triMesh_8h.html" title="objects/triMesh.h" alt="" coords="212,229,335,256"/>
+<area shape="rect" id="node38" href="$my__object3d_8cpp.html" title="my_object3d.cpp" alt="" coords="626,80,747,107"/>
+<area shape="rect" id="node5" href="$my__qglviewer_8h.html" title="Defines a custom viewer. " alt="" coords="500,155,609,181"/>
+<area shape="rect" id="node19" href="$moc__my__scene_8cxx.html" title="moc_my_scene.cxx" alt="" coords="633,155,772,181"/>
+<area shape="rect" id="node21" href="$my__scene_8cpp.html" title="my_scene.cpp" alt="" coords="796,155,903,181"/>
+<area shape="rect" id="node7" href="$ui__my__gui__form_8h.html" title="ui_my_gui_form.h" alt="" coords="497,229,620,256"/>
+<area shape="rect" id="node17" href="$my__qglviewer_8cpp.html" title="my_qglviewer.cpp" alt="" coords="645,229,768,256"/>
+<area shape="rect" id="node9" href="$my__main__window_8h.html" title="Defines the main window composed of a Graphical User Interface and a 3D scene. " alt="" coords="511,304,645,331"/>
+<area shape="rect" id="node13" href="$moc__my__main__window_8cxx.html" title="moc_my_main_window.cxx" alt="" coords="685,379,864,405"/>
+<area shape="rect" id="node15" href="$my__main__window_8cpp.html" title="my_main_window.cpp" alt="" coords="513,379,660,405"/>
+<area shape="rect" id="node26" href="$cube_8h.html" title="objects/cube.h" alt="" coords="315,304,421,331"/>
+<area shape="rect" id="node31" href="$pyramid_8h.html" title="objects/pyramid.h" alt="" coords="165,304,291,331"/>
+<area shape="rect" id="node36" href="$triMesh_8cpp.html" title="objects/triMesh.cpp" alt="" coords="5,304,140,331"/>
+<area shape="rect" id="node29" href="$cube_8cpp.html" title="objects/cube.cpp" alt="" coords="269,379,389,405"/>
+<area shape="rect" id="node34" href="$pyramid_8cpp.html" title="objects/pyramid.cpp" alt="" coords="105,379,244,405"/>
+</map>

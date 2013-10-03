@@ -1,0 +1,9 @@
+<map id="Pyramid::Pyramid" name="Pyramid::Pyramid">
+<area shape="rect" id="node3" href="$classTriMesh.html#af42d53d768083eb29b591a712037fcef" title="TriMesh::addTriangle" alt="" coords="202,5,345,32"/>
+<area shape="rect" id="node5" href="$classTriMesh.html#ae0d2c0bdf6b91931ee86aa51c8bfc29d" title="TriMesh::addVertex" alt="" coords="206,56,341,83"/>
+<area shape="rect" id="node9" href="$classTriMesh.html#a7a0ccea06db5bee5972cf601bd48510a" title="TriMesh::computeNormalsT" alt="" coords="183,107,364,133"/>
+<area shape="rect" id="node13" href="$classTriMesh.html#a2afd756d3720ffa295ad29bab3d3a77e" title="TriMesh::computeNormalsV" alt="" coords="182,157,365,184"/>
+<area shape="rect" id="node7" href="$classObject3D.html#a3b86fbd9b122140b1ed68461abb1e583" title="Object3D::extendBoundingBox" alt="" coords="413,56,613,83"/>
+<area shape="rect" id="node11" href="$classTriMesh.html#a32967a7d13c9cecd5ba93a89e0409f7d" title="TriMesh::addNormalT" alt="" coords="441,107,586,133"/>
+<area shape="rect" id="node15" href="$classTriMesh.html#a36f8783ffc98a97b5b022060609b7c55" title="TriMesh::addNormalV" alt="" coords="440,157,587,184"/>
+</map>
