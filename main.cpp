@@ -17,6 +17,7 @@
 #include "objects/cube.h"
 #include "objects/pyramid.h"
 #include "objects/cubecorner.h"
+#include "objects/disk.h"
 
 /**
 * Program usage
@@ -45,6 +46,8 @@ int main(int argc, char *argv[]){
   myScene->addObject(new Cube());
   myScene->addObject(new Pyramid());
   myScene->addObject(new CubeCorner());
+  myScene->addObject(new Disk());
+
 
   // add surface functions
   // ...

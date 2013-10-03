@@ -5,7 +5,8 @@
 class Disk : public TriMesh
 {
 public:
-    Disk();
+    Disk(double nbVectrices=200);
+    virtual ~Disk();
 };
 
 #endif // DISK_H

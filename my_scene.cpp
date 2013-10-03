@@ -16,7 +16,7 @@ MyScene::MyScene(float radius)
 {
   std::cout << "constructing :  MyScene" << std::endl;
 
-  _currentObject = 2;
+  _currentObject = 3;
 
   _radius = radius;
 
