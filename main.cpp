@@ -20,6 +20,7 @@
 #include "objects/disk.h"
 #include "objects/diskhole.h"
 #include "objects/cylinder.h"
+#include "objects/cone.h"
 
 /**
 * Program usage
@@ -51,6 +52,7 @@ int main(int argc, char *argv[]){
   myScene->addObject(new Disk());
   myScene->addObject(new DiskHole());
   myScene->addObject(new Cylinder(20));
+  myScene->addObject(new Cone(20));
 
 
   // add surface functions
