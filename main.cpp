@@ -18,6 +18,8 @@
 #include "objects/pyramid.h"
 #include "objects/cubecorner.h"
 #include "objects/disk.h"
+#include "objects/diskhole.h"
+#include "objects/cylinder.h"
 
 /**
 * Program usage
@@ -47,6 +49,8 @@ int main(int argc, char *argv[]){
   myScene->addObject(new Pyramid());
   myScene->addObject(new CubeCorner());
   myScene->addObject(new Disk());
+  myScene->addObject(new DiskHole());
+  myScene->addObject(new Cylinder(20));
 
 
   // add surface functions
