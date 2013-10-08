@@ -21,6 +21,7 @@
 #include "objects/diskhole.h"
 #include "objects/cylinder.h"
 #include "objects/cone.h"
+#include "objects/funcsurface.h"
 
 /**
 * Program usage
@@ -31,6 +32,10 @@ void usage(char* name){
   cout<< "options:" <<endl;
   cout<< "  -h, --help                 shows this message" <<endl;
   cout<< "  --off file                 loads OFF file" <<endl;
+}
+
+float func_expcos(float x, float y) {
+ return exp(-(x*x/2+y*y/2))*cos(2*x*x+2*y*y);
 }
 
 int main(int argc, char *argv[]){
@@ -53,6 +58,7 @@ int main(int argc, char *argv[]){
   myScene->addObject(new DiskHole());
   myScene->addObject(new Cylinder());
   myScene->addObject(new Cone());
+  myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&func_expcos));
 
 
   // add surface functions

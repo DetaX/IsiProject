@@ -21,7 +21,7 @@ set(SOURCES ${UIC_OUT} ${MOC_OUT}
             my_qglviewer.cpp my_main_window.cpp my_scene.cpp my_object3d.cpp 
             main.cpp objects/triMesh.cpp objects/cube.cpp objects/pyramid.cpp
             objects/cubecorner.cpp objects/disk.cpp objects/diskhole.cpp
-            objects/cylinder.cpp objects/cone.cpp)
+            objects/cylinder.cpp objects/cone.cpp objects/funcsurface.cpp)
 
 add_executable(isiviewer ${SOURCES})
 
