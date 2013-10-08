@@ -18,13 +18,13 @@ Cylinder::Cylinder(int nvertices)
       this->addTriangle(j,0,j%nvertices+1);
     //bot disk
     for (int j=0; j<nvertices; ++j)
-      this->addTriangle(nvertices+1,j+nvertices+2,(j+1)%nvertices+2+nvertices);
+      this->addTriangle(j+nvertices+2,nvertices+1,(j+1)%nvertices+2+nvertices);
 
     //side triangles
     for (int j=1; j<nvertices+1; ++j)
-      this->addTriangle(j,1+j%nvertices,j+1+nvertices);
+      this->addTriangle(1+j%nvertices,j,j+1+nvertices);
     for (int j=1; j<nvertices+1; ++j)
-      this->addTriangle(j%nvertices+1,j%nvertices+2+nvertices,nvertices+j+1);
+      this->addTriangle(j%nvertices+2+nvertices,j%nvertices+1,nvertices+j+1);
 
     computeNormalsT();
     computeNormalsV();
