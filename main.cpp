@@ -51,8 +51,8 @@ int main(int argc, char *argv[]){
   myScene->addObject(new CubeCorner());
   myScene->addObject(new Disk());
   myScene->addObject(new DiskHole());
-  myScene->addObject(new Cylinder(20));
-  myScene->addObject(new Cone(20));
+  myScene->addObject(new Cylinder());
+  myScene->addObject(new Cone());
 
 
   // add surface functions

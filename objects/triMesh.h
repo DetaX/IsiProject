@@ -10,7 +10,8 @@
 #define  _TRIMESH_H_
 
 #include <sstream>
-
+#include <glm/glm.hpp>
+#include <set>
 #include "../my_object3d.h"
 
 typedef glm::vec3  Vertex;

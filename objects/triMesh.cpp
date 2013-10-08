@@ -1,8 +1,9 @@
 #include "triMesh.h"
 
 #include <glm/gtc/type_ptr.hpp>
+#include <glm/glm/gtx/vector_angle.hpp>
 
-TriMesh::TriMesh() 
+TriMesh::TriMesh()
   : Object3D()
 {
   _name="TriMesh";
@@ -50,37 +51,45 @@ void TriMesh::computeBoundingBox(){
 void TriMesh::computeNormalsT(){
   _normalsT.empty();
 
-  // Compute a normal for each triangle
-  // and put it in normalsT vector.
-
-  // Replace code below
-
-  Normal n(1,1,0);
-
   for(unsigned int t=0; t<_triangles.size(); ++t) {
-      addNormalT(n);
+      glm::vec3 vect1, vect2;
+      vect1 = this->getVertex(_triangles[t][1]) - this->getVertex(_triangles[t][0]);
+      vect2 = this->getVertex(_triangles[t][2]) - this->getVertex(_triangles[t][0]);
+      glm::vec3 normal = glm::normalize(glm::cross(vect1,vect2));
+      addNormalT(normal);
     }
 
 }
 
 
 void TriMesh::computeNormalsV(float angle_threshold){
-  _normalsV.empty();
+    _normalsV.empty();
+    glm::vec3 sum;
+    int count;
+    bool share;
 
-  // Compute a normal for each vertex of each triangle
-  // and put it in normalsV vector.
-  // Each normal is the average of adjacent triangle normals.
-  // Only normals whose angle with the current triangle normal
-  // is below the angle_threshold is taken into account.
-
-  // Replace code below
-
-  Normal n(1,1,1);
-
-  for(unsigned int t=0; t<_triangles.size(); ++t) {
-      addNormalV(n);
-      addNormalV(n);
-      addNormalV(n);
+    for (unsigned int i=0;i<_triangles.size(); ++i) {
+      for (unsigned int m = 0;m<3;++m) {
+          sum = _normalsT[i];
+          count = 1;
+        for (unsigned int j = 0;j<_triangles.size();++j) {
+            share = false;
+            if (i!=j && glm::angle(_normalsT[i],_normalsT[j]) < angle_threshold) {
+                   for (unsigned int n = 0;n<3;++n) {
+                       if(_triangles[i][m]==_triangles[j][n])
+                           share = true;
+                   }
+               }
+            if (share)
+            {
+                sum += _normalsT[j];
+                count++;
+            }
+        }
+        sum /= count;
+        Normal n = sum;
+        addNormalV(n);
+      }
     }
 
 }
@@ -199,3 +208,4 @@ void TriMesh::drawVertices(){
     glVertex3fv(glm::value_ptr(_vertices[i]));
   glEnd();
 }
+

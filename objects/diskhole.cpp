@@ -15,7 +15,7 @@ DiskHole::DiskHole(double nbVectrices)
         this->addVertex(externDisk.getVertex(i));
         offset=(i*2)+1;
         this->addTriangle(offset, offset-1, offset-3);
-        this->addTriangle(offset,offset-2, offset-3);
+        this->addTriangle(offset-2,offset, offset-3);
     }
 
 

@@ -22,13 +22,13 @@ CubeCorner::CubeCorner()
 
     // triangles vertex indices
     static const GLint t[19][3] = {
-      {0,1,2},{2,3,1},  // bottom triangles
-      {0,1,4},{5,4,1},  // cornerless left side triangles
-      {5,1,3},{5,3,6},        // Back triangles
-      {4,0,2},{4,7,10},{9,10,2},{7,9,10},       // front face
-      {2,6,3},{9,11,2},{11,6,8},{11,9,8},   // right face
-      {5,4,6},{12,4,7},{8,12,6},{12,7,8},//top face
-      {7,8,9} //corner triangle
+      {0,1,2},{3,2,1},  // bottom triangles
+      {1,0,4},{4,5,1},  // cornerless left side triangles
+      {1,5,3},{3,5,6},        // Back triangles
+      {4,0,2},{7,4,10},{9,10,2},{9,7,10},       // front face
+      {6,2,3},{11,9,2},{11,6,8},{9,11,8},   // right face
+      {5,4,6},{12,4,7},{12,8,6},{12,7,8},//top face
+      {8,7,9} //corner triangle
     };
 
     // triangle normals
@@ -61,29 +61,8 @@ CubeCorner::CubeCorner()
     for (int i=0; i<19; ++i)
       this->addTriangle(t[i][0], t[i][1], t[i][2]);
 
-    // Fill normals vectors
-    bool use_computed_normals = false;
-
-    if (use_computed_normals) {
-
-        computeNormalsT();  // to be fixed
-        computeNormalsV();  // to be fixed
-
-      } else { // use manually defined normals
-
-        // set triangle normals
-        for (int i=0; i<12; ++i) {
-            Normal nT(nt[i][0], nt[i][1], nt[i][2]);
-            this->addNormalT(nT);
-          }
-        // set triangle vertex normals
-        for (int i=0; i<36; ++i) {
-            Normal nV(nv[i][0], nv[i][1], nv[i][2]);
-            this->addNormalV(nV);
-          }
-      }
-
-
+    computeNormalsT();
+    computeNormalsV();
 }
 
 CubeCorner::~CubeCorner(){}

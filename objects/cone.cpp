@@ -20,8 +20,8 @@ Cone::Cone(double nbVectrices)
         this->addVertex(x,y,-1.);
         this->addVertex(x,y,-1.);
         //Disks
-        this->addTriangle(0.,offset,offset+2);
-        this->addTriangle(1.,offset+1,offset+3);
+        this->addTriangle(0,offset,offset+2);
+        this->addTriangle(offset+1,1,offset+3);
     }
     computeNormalsT();
     computeNormalsV();
