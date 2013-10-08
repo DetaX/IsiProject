@@ -6,7 +6,7 @@
 class Cylinder : public TriMesh
 {
 public:
-    Cylinder(double nbVectrices = 20);
+    Cylinder(int nvertices = 20);
     virtual ~Cylinder();
 };
 
