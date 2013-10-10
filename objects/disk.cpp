@@ -1,33 +1,22 @@
 #include "disk.h"
 
-#include <cmath>
 
-Disk::Disk(double r, double nbVectrices)
+Disk::Disk(int nvertices)
+    : TriMesh()
 {
-    _name= "Disk";
-    const double pi = 3.14159265358979323846;
-    double x,y=0.;
-    if(nbVectrices<3)
-        nbVectrices = 3;
+    _name = "Disk";
 
-    //Center and first vertex
-    this->addVertex(0.,0.,0.);
-    this->addVertex(r,0.,0.);
+        this->addVertex(0,0,0);
+    for (float i=0; i<2*M_PI ; i+=(2/(float)nvertices)*M_PI)
+        this->addVertex(cos(i),sin(i),0);
 
-    for(double i=1; i<nbVectrices+1; ++i)
-    {
-        x=r*cos(i* (2*pi/nbVectrices) );
-        y=r*sin(i* (2*pi/nbVectrices) );
-        this->addVertex(x,y,0.);
-        this->addTriangle(0,i,i+1);
-    }
+    for (int j=1; j<nvertices+1; ++j)
+      this->addTriangle(0,j,j%nvertices+1);
 
-    //last triangle
-    this->addTriangle(0,nbVectrices+1,1);
-
-    computeNormalsT();
-    computeNormalsV();
+    computeNormalsT();  // to be fixed
+    computeNormalsV();  // to be fixed
 }
+
 
 Disk::~Disk()
 {

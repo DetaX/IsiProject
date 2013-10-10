@@ -6,7 +6,7 @@
 class Cone : public TriMesh
 {
 public:
-    Cone(double nbVectrices=20);
+    Cone(int nvertices=20);
     virtual ~Cone();
 };
 

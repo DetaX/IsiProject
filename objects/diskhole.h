@@ -6,7 +6,7 @@
 class DiskHole : public TriMesh
 {
 public:
-    DiskHole(double nbVectrices=20);
+    DiskHole(int nvertices = 20,float radius=0.2);
     virtual ~DiskHole();
 };
 

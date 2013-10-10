@@ -31,26 +31,6 @@ CubeCorner::CubeCorner()
       {8,7,9} //corner triangle
     };
 
-    // triangle normals
-    static const GLint nt[13][3] = {
-      {0,0,-1},{0,0,-1}, // bottom triangle normals
-      {0,1,0},{0,1,0},{1,0,0},{1,0,0},{0,-1,0},{0,-1,0},{-1,0,0},{-1,0,0}, // side triangle normals
-      {0,0,1},{0,0,1}    // top triangle normals
-    };
-
-    // triangle vertex normals
-    static const GLint nv[36][3] = {
-      {0,0,-1},{0,0,-1},{0,0,-1},{0,0,-1},{0,0,-1},{0,0,-1}, // bottom triangle vertex normals
-
-      {0,1,0},{0,1,0},{0,1,0},{0,1,0},{0,1,0},{0,1,0},       // side triangle vertex normals
-      {1,0,0},{1,0,0},{1,0,0},{1,0,0},{1,0,0},{1,0,0},
-      {0,-1,0},{0,-1,0},{0,-1,0},{0,-1,0},{0,-1,0},{0,-1,0},
-      {-1,0,0},{-1,0,0},{-1,0,0},{-1,0,0},{-1,0,0},{-1,0,0},
-
-      {0,0,1},{0,0,1},{0,0,1},{0,0,1},{0,0,1},{0,0,1}        // top triangle vertex normals
-    };
-
-
     //--- Fill vertices and triangles vectors
 
     // Fill vertices vector

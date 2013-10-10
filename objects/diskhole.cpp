@@ -1,26 +1,24 @@
 #include "diskhole.h"
-#include "disk.h"
 
-DiskHole::DiskHole(double nbVectrices)
+DiskHole::DiskHole(int nvertices, float radius)
+    : TriMesh()
 {
-    _name= "DiskHole";
-    Disk internDisk(0.5,nbVectrices);
-    Disk externDisk(1,nbVectrices);
-    int offset=0;
-    this->addVertex(internDisk.getVertex(1));
-    this->addVertex(externDisk.getVertex(1));
-    for(int i=1;i<nbVectrices+2;++i)
+    _name = "Disk Hole";
+
+    // ext circle
+    for (float i=0; i<2*M_PI ; i+=(2/(float)nvertices)*M_PI)
+        this->addVertex(cos(i),sin(i),0);
+    // int circle
+    for (float i=0; i<2*M_PI ; i+=(2/(float)nvertices)*M_PI)
+        this->addVertex(radius*cos(i),radius*sin(i),0);
+
+    for (int j=0; j<nvertices; ++j)
     {
-        this->addVertex(internDisk.getVertex(i));
-        this->addVertex(externDisk.getVertex(i));
-        offset=(i*2)+1;
-        this->addTriangle(offset, offset-1, offset-3);
-        this->addTriangle(offset-2,offset, offset-3);
+      this->addTriangle(j,(j+1)%nvertices,j+nvertices);
+      this->addTriangle((j+1)%nvertices,(j+1)%nvertices+nvertices,j+nvertices);
     }
-
-
-    computeNormalsT();
-    computeNormalsV();
+    computeNormalsT();  // to be fixed
+    computeNormalsV();  // to be fixed
 }
 
 DiskHole::~DiskHole()

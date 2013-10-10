@@ -1,30 +1,28 @@
 #include "cone.h"
 
-Cone::Cone(double nbVectrices)
+Cone::Cone(int nvertices)
+    : TriMesh()
 {
-    _name= "Cone";
+    _name = "Cone";
 
-    double x,y=0;
-    const double pi = 3.14159265358979323846;
-    double offset=0;
-    this->addVertex(0.,0.,1.);
-    this->addVertex(0.,0.,-1.);
-    this->addVertex(1.,0.,-1.);
-    this->addVertex(1.,0.,-1.);
 
-    for(double i=1; i<nbVectrices+1; ++i)
-    {
-        x=cos(i* (2.*pi/nbVectrices) );
-        y=sin(i* (2.*pi/nbVectrices) );
-        offset=(i*2.);
-        this->addVertex(x,y,-1.);
-        this->addVertex(x,y,-1.);
-        //Disks
-        this->addTriangle(0,offset,offset+2);
-        this->addTriangle(offset+1,1,offset+3);
-    }
-    computeNormalsT();
-    computeNormalsV();
+    // origin of disk
+        this->addVertex(0,0,-1);
+    for (float i=0; i<2*M_PI ; i+=(2/(float)nvertices)*M_PI)
+        this->addVertex(cos(i),sin(i),-1);
+
+    // top vertex
+        this->addVertex(0,0,1);
+    // disk
+    for (int j=1; j<nvertices+1; ++j)
+      this->addTriangle(0,j%nvertices+1,j);
+    // side
+    for (int j=1; j<nvertices+1; ++j)
+        this->addTriangle(nvertices+1,j%nvertices+1,(j+1)%nvertices+1);
+
+    computeNormalsT();  // to be fixed
+    computeNormalsV();  // to be fixed
+
 }
 
 Cone::~Cone()
