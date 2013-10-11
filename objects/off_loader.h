@@ -7,7 +7,7 @@
 class OffLoader: public TriMesh
 {
 public:
-    OffLoader();
+    OffLoader(std::string fileName);
 
     void loadFile(QString fileName);
 protected:

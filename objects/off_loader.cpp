@@ -1,13 +1,14 @@
 #include <iostream>
 #include <QTextStream>
 #include <QStringList>
+#include <string>
 
 #include "off_loader.h"
 #include "QFile"
 
-OffLoader::OffLoader()
+OffLoader::OffLoader(std::string fileName)
 {
-    this->loadFile("/home/minoulefou/Code/isi/isiviewer-1.3/offFiles/venus.off");
+    this->loadFile(QString::fromStdString(fileName));
 }
 
 void OffLoader::loadFile(QString fileName)

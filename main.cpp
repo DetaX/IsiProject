@@ -10,6 +10,8 @@
  *
  */
 #include <QApplication>
+#include <tclap/CmdLine.h>
+#include <string>
 #include "my_main_window.h"
 
 
@@ -32,7 +34,7 @@ void usage(char* name){
   cout<< "usage: " << name << " [options]" <<endl;
   cout<< "options:" <<endl;
   cout<< "  -h, --help                 shows this message" <<endl;
-  cout<< "  --off file                 loads OFF file" <<endl;
+  cout<< "  -o, --off file                 loads OFF file" <<endl;
 }
 
 float func_expcos(float x, float y) {
@@ -40,40 +42,50 @@ float func_expcos(float x, float y) {
 }
 
 int main(int argc, char *argv[]){
-  QApplication app(argc, argv);
+    QApplication app(argc, argv);
 
-  // Parse program arguments here
-  // with the tclap library
-  // http://tclap.sourceforge.net/manual.html
-  //
+    try{
+        //Parsing cli
+        TCLAP::CmdLine cmd("", ' ', "0.42");
+        TCLAP::ValueArg<std::string> offFileArg("o","off",".off file path",false,"","string");
+        cmd.add(offFileArg);
+        cmd.parse(argc,argv);
+        std::string offFile=offFileArg.getValue();
 
-  // initialize my custom 3D scene
-  float objectRadius = 1.;
-  QPointer<MyScene> myScene = new MyScene(objectRadius);
+        // initialize my custom 3D scene
+        float objectRadius = 1.;
+        QPointer<MyScene> myScene = new MyScene(objectRadius);
 
-  //add simple objects
-  myScene->addObject(new Cube());
-  myScene->addObject(new Pyramid());
-  myScene->addObject(new CubeCorner());
-  myScene->addObject(new Disk());
-  myScene->addObject(new DiskHole());
-  myScene->addObject(new Cylinder());
-  myScene->addObject(new Cone());
-  //myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&func_expcos));
-  myScene->addObject(new OffLoader());
+        //add simple objects
+        myScene->addObject(new Cube());
+        myScene->addObject(new Pyramid());
+        myScene->addObject(new CubeCorner());
+        myScene->addObject(new Disk());
+        myScene->addObject(new DiskHole());
+        myScene->addObject(new Cylinder());
+        myScene->addObject(new Cone());
+        myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&func_expcos));
+        if(offFile!="")
+        {
+            myScene->addObject(new OffLoader(offFile));
+            myScene->slotSetCurrentObject(8);
+        }
 
 
-  // add surface functions
-  // ...
+        // add surface functions
+        // ...
 
-  // add user defined OFF files
-  // ...
+        // add user defined OFF files
+        // ...
 
-  // initialize my custom main window
-  QPointer<MyMainWindow> myMainWindow = new MyMainWindow(myScene);
-  // display the window
-  myMainWindow->show();
-  // enter in the main loop
-  return app.exec();
+        // initialize my custom main window
+        QPointer<MyMainWindow> myMainWindow = new MyMainWindow(myScene);
+        // display the window
+        myMainWindow->show();
+        // enter in the main loop
+        return app.exec();
+    }
+    catch (TCLAP::ArgException &e)  // catch any exceptions
+       { std::cerr << "error: " << e.error() << " for arg " << e.argId() << std::endl; }
 }
 
