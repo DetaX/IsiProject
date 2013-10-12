@@ -30,14 +30,14 @@ Sphere::Sphere(int depth)
     //Step 2
 
     int id[8][3]={
-        {vertexId[0], vertexId[1], vertexId[4]},
+    {vertexId[0], vertexId[1], vertexId[4]},
         {vertexId[1], vertexId[2], vertexId[4]},
-        {vertexId[2], vertexId[3], vertexId[4]},
-        {vertexId[3], vertexId[0], vertexId[4]},
-        {vertexId[1], vertexId[0], vertexId[5]},
-        {vertexId[2], vertexId[1], vertexId[5]},
-        {vertexId[3], vertexId[2], vertexId[5]},
-        {vertexId[0], vertexId[3], vertexId[5]}
+    {vertexId[2], vertexId[3], vertexId[4]},
+    {vertexId[3], vertexId[0], vertexId[4]},
+    {vertexId[1], vertexId[0], vertexId[5]},
+    {vertexId[2], vertexId[1], vertexId[5]},
+    {vertexId[3], vertexId[2], vertexId[5]},
+    {vertexId[0], vertexId[3], vertexId[5]}
     };
     for(int i=0;i<8;++i)
         _divideTriangle(id[i],depth);
