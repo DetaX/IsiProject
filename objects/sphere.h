@@ -15,7 +15,7 @@
 class Sphere: public TriMesh
 {
 public:
-    Sphere(int depth=3);
+    Sphere(int depth=4);
     int getVertexID(Vertex vertex);
 private:
     void _divideTriangle(int vertexId[3], int depth);
