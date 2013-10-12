@@ -20,17 +20,17 @@
 class MyQGLViewer : public QGLViewer
 {
 public:
-  MyQGLViewer(QWidget *parent);
-  void setMyScene(MyScene* myScene);
-  
-protected:
-  virtual void init();
-  virtual void draw();
-  //virtual QString helpString() const;
-  virtual void keyPressEvent(QKeyEvent *e);
+    MyQGLViewer(QWidget *parent);
+    void setMyScene(MyScene* myScene);
 
 protected:
-  QPointer<MyScene> _myScene;
+    virtual void init();
+    virtual void draw();
+    //virtual QString helpString() const;
+    virtual void keyPressEvent(QKeyEvent *e);
+
+protected:
+    QPointer<MyScene> _myScene;
 };
 
 #endif

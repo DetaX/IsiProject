@@ -16,8 +16,8 @@
  */
 class Cube : public TriMesh {
 public:
-  Cube();
-  virtual ~Cube(){};
+    Cube();
+    virtual ~Cube(){};
 
 };
 

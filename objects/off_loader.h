@@ -1,3 +1,12 @@
+/**
+ * @author Félix Baylac
+ * @author Pierre Caretero
+ * @date   Oct 2013
+ *
+ *  Defines a .off loader making 3D objects
+ *
+ *
+ */
 #ifndef OFF_LOADER_H
 #define OFF_LOADER_H
 

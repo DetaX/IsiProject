@@ -48,8 +48,8 @@ void OffLoader::loadFile(QString fileName)
             stringList=line.split(" ");
             stringList.removeAll("");
             this->addVertex(stringList[0].toDouble(),
-                    stringList[1].toDouble(),
-                    stringList[2].toDouble());
+                            stringList[1].toDouble(),
+                            stringList[2].toDouble());
         }
 
         for(double i=0;i<triangleNumber; ++i)
@@ -60,8 +60,8 @@ void OffLoader::loadFile(QString fileName)
             if(stringList[0].toInt()!=3)
                 throw "Only triangles please!!!!!!!!!!";
             this->addTriangle(stringList[1].toInt(),
-                    stringList[2].toInt(),
-                    stringList[3].toInt());
+                              stringList[2].toInt(),
+                              stringList[3].toInt());
         }
         file.close();
         this->computeNormalsT();

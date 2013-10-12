@@ -1,3 +1,13 @@
+/**
+ * @author Félix Baylac
+ * @author Pierre Caretero
+ * @date   Oct 2013
+ *
+ *  Defines 3D cylinder
+ *
+ *
+ */
+
 #ifndef CYLINDER_H
 #define CYLINDER_H
 

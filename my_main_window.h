@@ -19,17 +19,17 @@
 
 class MyMainWindow : public QMainWindow
 {
-  Q_OBJECT
+    Q_OBJECT
 
 public:
-  MyMainWindow(MyScene* _myScene, QWidget *parent = 0);
+    MyMainWindow(MyScene* _myScene, QWidget *parent = 0);
 
 public slots:
-  void slotAbout();
+    void slotAbout();
 
 private:
-  Ui::MainWindow _ui;
-  QPointer<MyScene> _myScene;
+    Ui::MainWindow _ui;
+    QPointer<MyScene> _myScene;
 
 };
 

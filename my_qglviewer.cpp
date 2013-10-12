@@ -1,42 +1,42 @@
 #include "my_qglviewer.h"
 
 MyQGLViewer::MyQGLViewer(QWidget *parent)
-  : QGLViewer(parent), _myScene(NULL)
+    : QGLViewer(parent), _myScene(NULL)
 {
 
 }
 
 void MyQGLViewer::setMyScene(MyScene* myScene)
 {
-  _myScene = myScene;
+    _myScene = myScene;
 }
 
 void MyQGLViewer::init()
 {
-  // call the scene init method
+    // call the scene init method
 
-  restoreStateFromFile();
-  _myScene->init();
+    restoreStateFromFile();
+    _myScene->init();
 
 }
 
 
 void MyQGLViewer::draw()
 {
-  // call the scene draw method
-  _myScene->draw();
+    // call the scene draw method
+    _myScene->draw();
 
 }
 
 void MyQGLViewer::keyPressEvent(QKeyEvent *e)
 {
-  bool handled = false;
+    bool handled = false;
 
-  handled = _myScene->keyPressEvent(e);
-  
-  if (!handled)
-    QGLViewer::keyPressEvent(e);
+    handled = _myScene->keyPressEvent(e);
 
-  // update the window
-  updateGL();
+    if (!handled)
+        QGLViewer::keyPressEvent(e);
+
+    // update the window
+    updateGL();
 }

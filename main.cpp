@@ -1,9 +1,9 @@
 /**
  * @file   main.cpp
  * @author Bruno Jobard
- * @author Author1
- * @author Author2
- * @date   Sep 2012
+ * @author Félix Baylac
+ * @author Pierre Caretero
+ * @date   Oct 2013
  *
  * @brief  Declares an application, a main window and a 3D scene
  *
@@ -31,14 +31,14 @@
 * Should be handled with the tclap library
 */
 void usage(char* name){
-  cout<< "usage: " << name << " [options]" <<endl;
-  cout<< "options:" <<endl;
-  cout<< "  -h, --help                 shows this message" <<endl;
-  cout<< "  -o, --off file                 loads OFF file" <<endl;
+    cout<< "usage: " << name << " [options]" <<endl;
+    cout<< "options:" <<endl;
+    cout<< "  -h, --help                 shows this message" <<endl;
+    cout<< "  -o, --off file                 loads OFF file" <<endl;
 }
 
 float func_expcos(float x, float y) {
- return exp(-(x*x/2+y*y/2))*cos(2*x*x+2*y*y);
+    return exp(-(x*x/2+y*y/2))*cos(2*x*x+2*y*y);
 }
 
 int main(int argc, char *argv[]){
@@ -64,7 +64,7 @@ int main(int argc, char *argv[]){
         myScene->addObject(new DiskHole());
         myScene->addObject(new Cylinder());
         myScene->addObject(new Cone());
-        myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&func_expcos));
+        // myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&func_expcos));
         if(offFile!="")
         {
             myScene->addObject(new OffLoader(offFile));
@@ -86,6 +86,6 @@ int main(int argc, char *argv[]){
         return app.exec();
     }
     catch (TCLAP::ArgException &e)  // catch any exceptions
-       { std::cerr << "error: " << e.error() << " for arg " << e.argId() << std::endl; }
+    { std::cerr << "error: " << e.error() << " for arg " << e.argId() << std::endl; }
 }
 

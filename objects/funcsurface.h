@@ -1,3 +1,12 @@
+/**
+ * @author Félix Baylac
+ * @author Pierre Caretero
+ * @date   Oct 2013
+ *
+ *  Defines mathematical functions to make 3D surfaces
+ *
+ *
+ */
 #ifndef FUNCSURFACE_H
 #define FUNCSURFACE_H
 
