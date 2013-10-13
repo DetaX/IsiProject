@@ -5,6 +5,8 @@
 - TClap
 - QT>=4
 - Open gl 2
+
+
 ##Usage
    ./isiviewer  [-o <Path to off file>] [-f] [-m] [--] [--version] [-h]
 
