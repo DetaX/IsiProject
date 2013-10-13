@@ -18,6 +18,7 @@ public:
     FuncSurface(int nbx, int nby, float minx, float maxx,
                 float miny, float maxy, float(*func)(float, float)=NULL);
     void normalize();
+    static float func_expcos(float x, float y);
 
 protected:
     float _min[3];

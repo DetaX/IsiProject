@@ -4,7 +4,7 @@
  * Let's be honest: I didn't find out how to draw
  * a geodesic sphere by myself…
  * The following algorithm is explained in this page:
- * http://www.opengl.org.ru/docs/pg/0208.html and can be divided in steps:
+ * http://www.opengl.org.ru/docs/pg/0208.html and can be divided in 3 steps:
  *
  * 1- draw a basic shape of the sphere (an Icosahedron with 6 vertex)
  * 2- subdivise the triangles of the basic shape

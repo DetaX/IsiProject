@@ -1,5 +1,6 @@
 #include "funcsurface.h"
 #include <iostream>
+#include <cmath>
 
 FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, float maxy,
                          float (*func)(float,float))
@@ -60,4 +61,9 @@ void FuncSurface::normalize()
         for(unsigned int i=0;i<_vertices.size();++i)
             _vertices[i][coord]/=factor;
     }
+}
+
+float FuncSurface::func_expcos(float x, float y)
+{
+    return exp(-(x*x/2+y*y/2))*cos(2*x*x+2*y*y);
 }

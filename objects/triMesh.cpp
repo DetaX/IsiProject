@@ -1,7 +1,7 @@
 #include "triMesh.h"
 
 #include <glm/gtc/type_ptr.hpp>
-#include <glm/glm/gtx/vector_angle.hpp>
+#include <glm/gtx/vector_angle.hpp>
 
 TriMesh::TriMesh()
     : Object3D()

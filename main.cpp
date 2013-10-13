@@ -38,10 +38,6 @@ void usage(char* name){
     cout<< "  -o, --off file                 loads OFF file" <<endl;
 }
 
-float func_expcos(float x, float y) {
-    return exp(-(x*x/2+y*y/2))*cos(2*x*x+2*y*y);
-}
-
 int main(int argc, char *argv[]){
     QApplication app(argc, argv);
 
@@ -49,36 +45,44 @@ int main(int argc, char *argv[]){
         //Parsing cli
         TCLAP::CmdLine cmd("", ' ', "0.42");
         TCLAP::ValueArg<std::string> offFileArg("o","off",".off file path",false,"","string");
+        TCLAP::SwitchArg meshSwitch("m","mesh","Draw procedurally generated meshs", cmd, false);
+        TCLAP::SwitchArg funcSwitch("f","funcSurface","Draw function surfaces", cmd, false);
         cmd.add(offFileArg);
         cmd.parse(argc,argv);
         std::string offFile=offFileArg.getValue();
+        bool drawMesh = meshSwitch.getValue();
+        bool drawFunc = funcSwitch.getValue();
 
         // initialize my custom 3D scene
         float objectRadius = 1.;
         QPointer<MyScene> myScene = new MyScene(objectRadius);
 
-        //add simple objects
-        myScene->addObject(new Cube());
-        myScene->addObject(new Pyramid());
-        myScene->addObject(new CubeCorner());
-        myScene->addObject(new Disk());
-        myScene->addObject(new DiskHole());
-        myScene->addObject(new Cylinder());
-        myScene->addObject(new Cone());
-        myScene->addObject(new Sphere());
-        // myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&func_expcos));
+        if(drawMesh || (!drawFunc && offFile==""))
+        {
+            //add simple objects
+            myScene->addObject(new Cube());
+            myScene->addObject(new Pyramid());
+            myScene->addObject(new CubeCorner());
+            myScene->addObject(new Disk());
+            myScene->addObject(new DiskHole());
+            myScene->addObject(new Cylinder());
+            myScene->addObject(new Cone());
+            myScene->addObject(new Sphere());
+        }
+        if(drawFunc)
+            // add surface functions
+            myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_expcos));
         if(offFile!="")
         {
+            // add user defined OFF files
             myScene->addObject(new OffLoader(offFile));
-            myScene->slotSetCurrentObject(8);
         }
 
 
-        // add surface functions
-        // ...
 
-        // add user defined OFF files
-        // ...
+
+
+
 
         // initialize my custom main window
         QPointer<MyMainWindow> myMainWindow = new MyMainWindow(myScene);

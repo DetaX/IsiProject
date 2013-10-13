@@ -60,37 +60,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 .PHONY : edit_cache/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
-
-# Special rule for the target install/local
-install/local/fast: install/local
-.PHONY : install/local/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-.PHONY : list_install_components/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -131,19 +100,6 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
-
-#=============================================================================
-# Target rules for targets named doc
-
-# Build rule for target.
-doc: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doc
-.PHONY : doc
-
-# fast build rule for target.
-doc/fast:
-	$(MAKE) -f CMakeFiles/doc.dir/build.make CMakeFiles/doc.dir/build
-.PHONY : doc/fast
 
 #=============================================================================
 # Target rules for targets named isiviewer
@@ -326,6 +282,30 @@ my_scene.cpp.s:
 	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/my_scene.cpp.s
 .PHONY : my_scene.cpp.s
 
+objects/cone.o: objects/cone.cpp.o
+.PHONY : objects/cone.o
+
+# target to build an object file
+objects/cone.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cone.cpp.o
+.PHONY : objects/cone.cpp.o
+
+objects/cone.i: objects/cone.cpp.i
+.PHONY : objects/cone.i
+
+# target to preprocess a source file
+objects/cone.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cone.cpp.i
+.PHONY : objects/cone.cpp.i
+
+objects/cone.s: objects/cone.cpp.s
+.PHONY : objects/cone.s
+
+# target to generate assembly for a file
+objects/cone.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cone.cpp.s
+.PHONY : objects/cone.cpp.s
+
 objects/cube.o: objects/cube.cpp.o
 .PHONY : objects/cube.o
 
@@ -350,6 +330,150 @@ objects/cube.cpp.s:
 	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cube.cpp.s
 .PHONY : objects/cube.cpp.s
 
+objects/cubecorner.o: objects/cubecorner.cpp.o
+.PHONY : objects/cubecorner.o
+
+# target to build an object file
+objects/cubecorner.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cubecorner.cpp.o
+.PHONY : objects/cubecorner.cpp.o
+
+objects/cubecorner.i: objects/cubecorner.cpp.i
+.PHONY : objects/cubecorner.i
+
+# target to preprocess a source file
+objects/cubecorner.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cubecorner.cpp.i
+.PHONY : objects/cubecorner.cpp.i
+
+objects/cubecorner.s: objects/cubecorner.cpp.s
+.PHONY : objects/cubecorner.s
+
+# target to generate assembly for a file
+objects/cubecorner.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cubecorner.cpp.s
+.PHONY : objects/cubecorner.cpp.s
+
+objects/cylinder.o: objects/cylinder.cpp.o
+.PHONY : objects/cylinder.o
+
+# target to build an object file
+objects/cylinder.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cylinder.cpp.o
+.PHONY : objects/cylinder.cpp.o
+
+objects/cylinder.i: objects/cylinder.cpp.i
+.PHONY : objects/cylinder.i
+
+# target to preprocess a source file
+objects/cylinder.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cylinder.cpp.i
+.PHONY : objects/cylinder.cpp.i
+
+objects/cylinder.s: objects/cylinder.cpp.s
+.PHONY : objects/cylinder.s
+
+# target to generate assembly for a file
+objects/cylinder.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/cylinder.cpp.s
+.PHONY : objects/cylinder.cpp.s
+
+objects/disk.o: objects/disk.cpp.o
+.PHONY : objects/disk.o
+
+# target to build an object file
+objects/disk.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/disk.cpp.o
+.PHONY : objects/disk.cpp.o
+
+objects/disk.i: objects/disk.cpp.i
+.PHONY : objects/disk.i
+
+# target to preprocess a source file
+objects/disk.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/disk.cpp.i
+.PHONY : objects/disk.cpp.i
+
+objects/disk.s: objects/disk.cpp.s
+.PHONY : objects/disk.s
+
+# target to generate assembly for a file
+objects/disk.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/disk.cpp.s
+.PHONY : objects/disk.cpp.s
+
+objects/diskhole.o: objects/diskhole.cpp.o
+.PHONY : objects/diskhole.o
+
+# target to build an object file
+objects/diskhole.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/diskhole.cpp.o
+.PHONY : objects/diskhole.cpp.o
+
+objects/diskhole.i: objects/diskhole.cpp.i
+.PHONY : objects/diskhole.i
+
+# target to preprocess a source file
+objects/diskhole.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/diskhole.cpp.i
+.PHONY : objects/diskhole.cpp.i
+
+objects/diskhole.s: objects/diskhole.cpp.s
+.PHONY : objects/diskhole.s
+
+# target to generate assembly for a file
+objects/diskhole.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/diskhole.cpp.s
+.PHONY : objects/diskhole.cpp.s
+
+objects/funcsurface.o: objects/funcsurface.cpp.o
+.PHONY : objects/funcsurface.o
+
+# target to build an object file
+objects/funcsurface.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/funcsurface.cpp.o
+.PHONY : objects/funcsurface.cpp.o
+
+objects/funcsurface.i: objects/funcsurface.cpp.i
+.PHONY : objects/funcsurface.i
+
+# target to preprocess a source file
+objects/funcsurface.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/funcsurface.cpp.i
+.PHONY : objects/funcsurface.cpp.i
+
+objects/funcsurface.s: objects/funcsurface.cpp.s
+.PHONY : objects/funcsurface.s
+
+# target to generate assembly for a file
+objects/funcsurface.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/funcsurface.cpp.s
+.PHONY : objects/funcsurface.cpp.s
+
+objects/off_loader.o: objects/off_loader.cpp.o
+.PHONY : objects/off_loader.o
+
+# target to build an object file
+objects/off_loader.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/off_loader.cpp.o
+.PHONY : objects/off_loader.cpp.o
+
+objects/off_loader.i: objects/off_loader.cpp.i
+.PHONY : objects/off_loader.i
+
+# target to preprocess a source file
+objects/off_loader.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/off_loader.cpp.i
+.PHONY : objects/off_loader.cpp.i
+
+objects/off_loader.s: objects/off_loader.cpp.s
+.PHONY : objects/off_loader.s
+
+# target to generate assembly for a file
+objects/off_loader.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/off_loader.cpp.s
+.PHONY : objects/off_loader.cpp.s
+
 objects/pyramid.o: objects/pyramid.cpp.o
 .PHONY : objects/pyramid.o
 
@@ -373,6 +497,54 @@ objects/pyramid.s: objects/pyramid.cpp.s
 objects/pyramid.cpp.s:
 	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/pyramid.cpp.s
 .PHONY : objects/pyramid.cpp.s
+
+objects/sphere.o: objects/sphere.cpp.o
+.PHONY : objects/sphere.o
+
+# target to build an object file
+objects/sphere.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/sphere.cpp.o
+.PHONY : objects/sphere.cpp.o
+
+objects/sphere.i: objects/sphere.cpp.i
+.PHONY : objects/sphere.i
+
+# target to preprocess a source file
+objects/sphere.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/sphere.cpp.i
+.PHONY : objects/sphere.cpp.i
+
+objects/sphere.s: objects/sphere.cpp.s
+.PHONY : objects/sphere.s
+
+# target to generate assembly for a file
+objects/sphere.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/sphere.cpp.s
+.PHONY : objects/sphere.cpp.s
+
+objects/torus.o: objects/torus.cpp.o
+.PHONY : objects/torus.o
+
+# target to build an object file
+objects/torus.cpp.o:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/torus.cpp.o
+.PHONY : objects/torus.cpp.o
+
+objects/torus.i: objects/torus.cpp.i
+.PHONY : objects/torus.i
+
+# target to preprocess a source file
+objects/torus.cpp.i:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/torus.cpp.i
+.PHONY : objects/torus.cpp.i
+
+objects/torus.s: objects/torus.cpp.s
+.PHONY : objects/torus.s
+
+# target to generate assembly for a file
+objects/torus.cpp.s:
+	$(MAKE) -f CMakeFiles/isiviewer.dir/build.make CMakeFiles/isiviewer.dir/objects/torus.cpp.s
+.PHONY : objects/torus.cpp.s
 
 objects/triMesh.o: objects/triMesh.cpp.o
 .PHONY : objects/triMesh.o
@@ -404,12 +576,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... doc"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
 	@echo "... isiviewer"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... main.o"
 	@echo "... main.i"
@@ -432,12 +600,39 @@ help:
 	@echo "... my_scene.o"
 	@echo "... my_scene.i"
 	@echo "... my_scene.s"
+	@echo "... objects/cone.o"
+	@echo "... objects/cone.i"
+	@echo "... objects/cone.s"
 	@echo "... objects/cube.o"
 	@echo "... objects/cube.i"
 	@echo "... objects/cube.s"
+	@echo "... objects/cubecorner.o"
+	@echo "... objects/cubecorner.i"
+	@echo "... objects/cubecorner.s"
+	@echo "... objects/cylinder.o"
+	@echo "... objects/cylinder.i"
+	@echo "... objects/cylinder.s"
+	@echo "... objects/disk.o"
+	@echo "... objects/disk.i"
+	@echo "... objects/disk.s"
+	@echo "... objects/diskhole.o"
+	@echo "... objects/diskhole.i"
+	@echo "... objects/diskhole.s"
+	@echo "... objects/funcsurface.o"
+	@echo "... objects/funcsurface.i"
+	@echo "... objects/funcsurface.s"
+	@echo "... objects/off_loader.o"
+	@echo "... objects/off_loader.i"
+	@echo "... objects/off_loader.s"
 	@echo "... objects/pyramid.o"
 	@echo "... objects/pyramid.i"
 	@echo "... objects/pyramid.s"
+	@echo "... objects/sphere.o"
+	@echo "... objects/sphere.i"
+	@echo "... objects/sphere.s"
+	@echo "... objects/torus.o"
+	@echo "... objects/torus.i"
+	@echo "... objects/torus.s"
 	@echo "... objects/triMesh.o"
 	@echo "... objects/triMesh.i"
 	@echo "... objects/triMesh.s"
