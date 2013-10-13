@@ -44,9 +44,9 @@ int main(int argc, char *argv[]){
     try{
         //Parsing cli
         TCLAP::CmdLine cmd("", ' ', "0.42");
-        TCLAP::ValueArg<std::string> offFileArg("o","off",".off file path",false,"","string");
-        TCLAP::SwitchArg meshSwitch("m","mesh","Draw procedurally generated meshs", cmd, false);
-        TCLAP::SwitchArg funcSwitch("f","funcSurface","Draw function surfaces", cmd, false);
+        TCLAP::ValueArg<std::string> offFileArg("o","off","Draw an object contained in a off file.",false,"","Path to off file");
+        TCLAP::SwitchArg meshSwitch("m","mesh","Draw procedurally generated meshs.", cmd, false);
+        TCLAP::SwitchArg funcSwitch("f","funcSurface","Draw function surfaces.", cmd, false);
         cmd.add(offFileArg);
         cmd.parse(argc,argv);
         std::string offFile=offFileArg.getValue();
