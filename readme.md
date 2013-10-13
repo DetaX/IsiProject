@@ -1,4 +1,4 @@
-#Isi school projet
+#Isi school project
 ##Requirements
 - GLU
 - GLX
