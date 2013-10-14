@@ -128,7 +128,12 @@ public:
    */
     double normalize();
 
+    /**
+   * tells if a triangle contains a vertex
+   */
 
+    bool pointInTriangle(int t, Vertex vertex);
+    bool sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B);
 };
 
 

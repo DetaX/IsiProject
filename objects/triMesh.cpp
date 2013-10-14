@@ -59,6 +59,8 @@ void TriMesh::computeNormalsT(){
         addNormalT(normal);
     }
 
+
+
 }
 
 
@@ -209,3 +211,22 @@ void TriMesh::drawVertices(){
     glEnd();
 }
 
+
+bool TriMesh::pointInTriangle(int t, Vertex vertex) {
+    glm::vec3 A = this->getVertex(_triangles[t][0]);
+    glm::vec3 B = this->getVertex(_triangles[t][1]);
+    glm::vec3 C = this->getVertex(_triangles[t][2]);
+    if (sameSide(vertex,A,B,C) && sameSide(vertex,B,A,C) && sameSide(vertex,C,A,B)) {
+        glm::vec3 vc1 = glm::cross(A-B,A-C);
+        if(glm::abs(glm::dot(A-vertex,vc1)) <= .01f)
+            return true;
+    }
+
+}
+
+bool TriMesh::sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B) {
+    glm::vec3 cp1 = glm::cross(B-A,p1-A);
+    glm::vec3 cp2 = glm::cross(B-A,p2-A);
+    if (glm::dot(cp1,cp2)>=0) return true;
+    return false;
+}
