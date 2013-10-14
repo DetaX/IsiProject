@@ -24,6 +24,7 @@
 #include "objects/cylinder.h"
 #include "objects/cone.h"
 #include "objects/sphere.h"
+#include "objects/torus.h"
 #include "objects/funcsurface.h"
 #include "objects/off_loader.h"
 
@@ -68,6 +69,7 @@ int main(int argc, char *argv[]){
             myScene->addObject(new Cylinder());
             myScene->addObject(new Cone());
             myScene->addObject(new Sphere());
+            myScene->addObject((new Torus()));
         }
         if(drawFunc)
             // add surface functions

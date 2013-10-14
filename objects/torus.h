@@ -6,11 +6,7 @@
 class Torus : public TriMesh
 {
 public:
-    Torus();
-
-private:
-    void _drawCircles(Vertex center, glm::vec3 normal, int nbVertex);
-
+    Torus(int nbVertexLong=5, int nbVertexCircle=5);
 };
 
 #endif // TORUS_H
