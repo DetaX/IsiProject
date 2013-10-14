@@ -6,7 +6,7 @@
 class Torus : public TriMesh
 {
 public:
-    Torus(int nbVertexLong=5, int nbVertexCircle=5);
+    Torus(int nbVertexLong=10, int nbVertexCircle=5);
 };
 
 #endif // TORUS_H
