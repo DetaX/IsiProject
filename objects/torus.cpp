@@ -23,20 +23,24 @@ Torus::Torus(int nbVertexLong, int nbVertexCircle)
             addVertex(x,y,z);
             if(i>0)
             {
-                addTriangle(_vertices.size()-1,
-                            _vertices.size(),
-                            _vertices.size()-nbVertexCircle);
-                addTriangle(_vertices.size()-nbVertexCircle,
-                            _vertices.size()-1-nbVertexCircle,
-                            _vertices.size()-1);
+                addTriangle(_vertices.size()-2,
+                            _vertices.size()-1,
+                            _vertices.size()-1-nbVertexCircle);
+                addTriangle(_vertices.size()-1-nbVertexCircle,
+                            _vertices.size()-2-nbVertexCircle,
+                            _vertices.size()-2);
 
             }
         }
-
+//        addTriangle(_vertices.size()-1,
+//                    _vertices.size(),
+//                    _vertices.size()-nbVertexCircle);
+//        addTriangle(_vertices.size()-nbVertexCircle,
+//                    _vertices.size()-1-nbVertexCircle,
+//                    _vertices.size()-1);
 
 
     }
-
     computeNormalsT();
     computeNormalsV();
 }
