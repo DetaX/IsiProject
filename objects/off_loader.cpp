@@ -1,7 +1,7 @@
 #include "off_loader.h"
 #include "QFile"
 
-OffLoader::OffLoader(std::string fileName)
+OffLoader::OffLoader(std::string fileName) throw(std::logic_error, std::ios_base::failure)
 {
     this->loadFile(QString::fromStdString(fileName));
 }
@@ -14,7 +14,6 @@ void OffLoader::loadFile(QString fileName) throw(std::logic_error, std::ios_base
     QString line;
     QStringList stringList;
     QTextStream textStream(&file);
-    qint64 pos;
 
     if(!file.open(QIODevice::ReadOnly | QIODevice::Text))
         throw std::ios_base::failure("Cannot open file");

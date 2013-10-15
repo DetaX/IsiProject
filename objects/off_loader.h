@@ -20,7 +20,7 @@
 class OffLoader: public TriMesh
 {
 public:
-    OffLoader(std::string fileName);
+    OffLoader(std::string fileName)throw(std::logic_error, std::ios_base::failure);
 
     void loadFile(QString fileName)throw(std::logic_error, std::ios_base::failure);
 protected:
