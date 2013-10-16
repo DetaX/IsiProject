@@ -224,7 +224,8 @@ bool TriMesh::pointInTriangle(Vertex A, Vertex B, Vertex C, Vertex vertex) {
 bool TriMesh::sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B) {
     glm::vec3 cp1 = glm::cross(B-A,p1-A);
     glm::vec3 cp2 = glm::cross(B-A,p2-A);
-    if (glm::dot(cp1,cp2)>=0) return true;
+    if (glm::dot(cp1,cp2)>=0)
+        return true;
     return false;
 }
 
@@ -232,18 +233,22 @@ void TriMesh::triangulate(QList<int> sommet) {
     int offset = 0;
     int size = sommet.size();
     while (sommet.size()>3) {
-        bool cut=true;
+        bool cut=false;
         Vertex a = getVertex(offset);
         Vertex b = getVertex(1+offset);
         Vertex c = getVertex(2+offset);
         if(glm::angle(b-a,c-b) < 180) {
-            for(unsigned int j=0;j<sommet.size();++j)
+            unsigned int j;
+            while (!cut && j<sommet.size()) {
                 cut = pointInTriangle(a,b,c,getVertex(j));
-        }
-
-        if (!cut) {
-            addTriangle(sommet[offset],sommet[offset+1],sommet[offset+2]);
-            sommet.removeAt(offset+1);
+                j++;
+            }
+            if (!cut) {
+                addTriangle(sommet[offset],sommet[offset+1],sommet[offset+2]);
+                sommet.removeAt(offset+1);
+            }
+            else
+                offset=(offset+1)%size;
         }
         else
             offset=(offset+1)%size;
