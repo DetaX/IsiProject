@@ -26,16 +26,17 @@ Torus::Torus(int nbCircles, int nbVertexCircle)
 
     }
 
+    int nbVertex = nbCircles*nbVertexCircle;
     //Adding triangles
     for(int i=0;i<nbCircles;++i)
         for(int j=0;j<nbVertexCircle;++j)
         {
-            addTriangle(i*nbVertexCircle+j+1,
-                        i*nbVertexCircle+j,
-                        (i+1)*nbVertexCircle+j);
-            addTriangle((i+1)*nbVertexCircle+j,
-                        (i+1)*nbVertexCircle+j+1,
-                        i*nbVertexCircle+j+1);
+            addTriangle((i*nbVertexCircle+j+1)%(nbVertex),
+                        (i*nbVertexCircle+j)%(nbVertex),
+                        ((i+1)*nbVertexCircle+j)%(nbVertex));
+            addTriangle(((i+1)*nbVertexCircle+j)%(nbVertex),
+                        ((i+1)*nbVertexCircle+j+1)%(nbVertex),
+                        (i*nbVertexCircle+j+1)%(nbVertex));
         }
 
     computeNormalsT();
