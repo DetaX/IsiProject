@@ -2,6 +2,8 @@
 #include "QFile"
 #include "QList"
 
+#include <QChar>
+
 OffLoader::OffLoader(std::string fileName) throw(std::logic_error, std::ios_base::failure)
 {
     this->loadFile(QString::fromStdString(fileName));
@@ -57,6 +59,7 @@ QStringList OffLoader::readLine(QTextStream &stream)
     QStringList list;
     do{
         line = stream.readLine();
+        line.replace(QString("\t"),QString(" "));
         list=line.split(" ");
         list.removeAll("");
     }while(list.size()==0 || list[0].contains("#") || list[0]=="");
