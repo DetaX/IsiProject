@@ -1,5 +1,6 @@
 #include "off_loader.h"
 #include "QFile"
+#include "QList"
 
 OffLoader::OffLoader(std::string fileName) throw(std::logic_error, std::ios_base::failure)
 {
@@ -9,7 +10,7 @@ OffLoader::OffLoader(std::string fileName) throw(std::logic_error, std::ios_base
 void OffLoader::loadFile(QString fileName) throw(std::logic_error, std::ios_base::failure)
 {
     _fileLoaded=fileName;
-    double vertexNumber, triangleNumber;
+    double vertexNumber, polygonNumber;
     QFile file(fileName);
     QString line;
     QStringList stringList;
@@ -26,7 +27,7 @@ void OffLoader::loadFile(QString fileName) throw(std::logic_error, std::ios_base
         }
         stringList = readLine(textStream);
         vertexNumber=stringList[0].toDouble();
-        triangleNumber=stringList[1].toDouble();
+        polygonNumber=stringList[1].toDouble();
         for(double i=0; i<vertexNumber; ++i)
         {
             stringList = readLine(textStream);
@@ -35,14 +36,13 @@ void OffLoader::loadFile(QString fileName) throw(std::logic_error, std::ios_base
                             stringList[2].toDouble());
         }
 
-        for(double i=0;i<triangleNumber; ++i)
+        for(double i=0;i<polygonNumber; ++i)
         {
             stringList=readLine(textStream);
-            if(stringList[0].toInt()!=3)
-                throw std::logic_error("Only triangles please!!!!!!!!!!");
-            this->addTriangle(stringList[1].toInt(),
-                              stringList[2].toInt(),
-                              stringList[3].toInt());
+            QList<int> sommet;
+            for (unsigned int i =1;i<=stringList[0].toInt();++i)
+                sommet.push_back(stringList[i].toInt());
+            triangulate(sommet);
         }
         file.close();
         this->computeNormalsT();

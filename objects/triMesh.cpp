@@ -212,16 +212,13 @@ void TriMesh::drawVertices(){
 }
 
 
-bool TriMesh::pointInTriangle(int t, Vertex vertex) {
-    glm::vec3 A = this->getVertex(_triangles[t][0]);
-    glm::vec3 B = this->getVertex(_triangles[t][1]);
-    glm::vec3 C = this->getVertex(_triangles[t][2]);
+bool TriMesh::pointInTriangle(Vertex A, Vertex B, Vertex C, Vertex vertex) {
     if (sameSide(vertex,A,B,C) && sameSide(vertex,B,A,C) && sameSide(vertex,C,A,B)) {
         glm::vec3 vc1 = glm::cross(A-B,A-C);
         if(glm::abs(glm::dot(A-vertex,vc1)) <= .01f)
             return true;
     }
-
+    return false;
 }
 
 bool TriMesh::sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B) {
@@ -229,4 +226,27 @@ bool TriMesh::sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B) {
     glm::vec3 cp2 = glm::cross(B-A,p2-A);
     if (glm::dot(cp1,cp2)>=0) return true;
     return false;
+}
+
+void TriMesh::triangulate(QList<int> sommet) {
+    int offset = 0;
+    int size = sommet.size();
+    while (sommet.size()>3) {
+        bool cut=true;
+        Vertex a = getVertex(offset);
+        Vertex b = getVertex(1+offset);
+        Vertex c = getVertex(2+offset);
+        if(glm::angle(b-a,c-b) < 180) {
+            for(unsigned int j=0;j<sommet.size();++j)
+                cut = pointInTriangle(a,b,c,getVertex(j));
+        }
+
+        if (!cut) {
+            addTriangle(sommet[offset],sommet[offset+1],sommet[offset+2]);
+            sommet.removeAt(offset+1);
+        }
+        else
+            offset=(offset+1)%size;
+    }
+    addTriangle(sommet[0],sommet[1],sommet[2]);
 }

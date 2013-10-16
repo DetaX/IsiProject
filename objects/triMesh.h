@@ -13,6 +13,7 @@
 #include <glm/glm.hpp>
 #include <set>
 #include "../my_object3d.h"
+#include <QList>
 
 typedef glm::vec3  Vertex;
 typedef glm::vec3  Normal;
@@ -132,8 +133,13 @@ public:
    * tells if a triangle contains a vertex
    */
 
-    bool pointInTriangle(int t, Vertex vertex);
+    bool pointInTriangle(Vertex A, Vertex B, Vertex C, Vertex vertex);
     bool sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B);
+    /**
+     * cuts a polygon in triangles
+     */
+
+    void triangulate(QList<int> sommet);
 };
 
 
