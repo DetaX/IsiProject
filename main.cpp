@@ -61,20 +61,22 @@ int main(int argc, char *argv[]){
         if(drawMesh || (!drawFunc && offFile==""))
         {
             //add simple objects
-//            myScene->addObject(new Cube());
-//            myScene->addObject(new Pyramid());
-//            myScene->addObject(new CubeCorner());
-//            myScene->addObject(new Disk());
-//            myScene->addObject(new DiskHole());
-//            myScene->addObject(new Cylinder());
-//            myScene->addObject(new Cone());
-//            myScene->addObject(new Sphere());
-//            myScene->addObject(new Torus());
-            myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_sqrt));
+            myScene->addObject(new Cube());
+            myScene->addObject(new Pyramid());
+            myScene->addObject(new CubeCorner());
+            myScene->addObject(new Disk());
+            myScene->addObject(new DiskHole());
+            myScene->addObject(new Cylinder());
+            myScene->addObject(new Cone());
+            myScene->addObject(new Sphere());
+            myScene->addObject(new Torus());
         }
         if(drawFunc)
+        {
             // add surface functions
             myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_expcos));
+            myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_sqrt));
+        }
         if(offFile!="")
         {
             // add user defined OFF files
