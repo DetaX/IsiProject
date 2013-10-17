@@ -26,6 +26,9 @@ void TriMesh::addTriangle(int v1, int v2, int v3){
     t.push_back(v3);
     addTriangle(t);
 }
+void TriMesh::addTriangleColor(Color c){
+    _colors.push_back(c);
+}
 void TriMesh::addNormalT(Normal n){
     _normalsT.push_back(n);
 }
@@ -131,16 +134,22 @@ void TriMesh::toOStream(std::ostream& out) const{
 
 void TriMesh::draw(bool flipnormals){
     unsigned int i,t;
-    bool smooth;
+    bool smooth,color;
     Normal n;
 
     GLint mode[1];
     glGetIntegerv(GL_SHADE_MODEL, mode);
     smooth= mode[0]==GL_SMOOTH && _normalsV.size()==_triangles.size()*3;
+    color=_triangles.size()==_colors.size();
 
     if(smooth){
         glBegin(GL_TRIANGLES);
-        for(t=0; t<_triangles.size(); ++t)
+        for(t=0; t<_triangles.size(); ++t) {
+            if (color)
+                if(_colors[t].size()==4)
+                    glColor4f(_colors[t][0],_colors[t][1],_colors[t][2],_colors[t][3]);
+                else
+                    glColor3f(_colors[t][0],_colors[t][1],_colors[t][2]);
             for(i=0; i<3; i++){
                 n=_normalsV[3*t+i];
                 if(flipnormals) n*=-1;
@@ -148,10 +157,16 @@ void TriMesh::draw(bool flipnormals){
                 glNormal3fv(glm::value_ptr(n));
                 glVertex3fv(glm::value_ptr(_vertices[_triangles[t][i]]));
             }
+        }
         glEnd();
     }else{
         glBegin(GL_TRIANGLES);
         for(t=0; t<_triangles.size(); ++t){
+            if (color)
+                if(_colors[t].size()==4)
+                    glColor4f(_colors[t][0],_colors[t][1],_colors[t][2],_colors[t][3]);
+                else
+                    glColor3f(_colors[t][0],_colors[t][1],_colors[t][2]);
             n=_normalsT[t];
             if(flipnormals) n*=-1;
             glNormal3fv(glm::value_ptr(n));
@@ -229,23 +244,25 @@ bool TriMesh::sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B) {
     return false;
 }
 
-void TriMesh::triangulate(QList<int> sommet) {
+void TriMesh::triangulate(QList<int> sommets, Color color) {
     int offset = 0;
-    int size = sommet.size();
-    while (sommet.size()>3) {
+    int size = sommets.size();
+    while (sommets.size()>3) {
         bool cut=false;
         Vertex a = getVertex(offset);
         Vertex b = getVertex(1+offset);
         Vertex c = getVertex(2+offset);
         if(glm::angle(b-a,c-b) < 180) {
             unsigned int j;
-            while (!cut && j<sommet.size()) {
+            while (!cut && j<sommets.size()) {
                 cut = pointInTriangle(a,b,c,getVertex(j));
                 j++;
             }
             if (!cut) {
-                addTriangle(sommet[offset],sommet[offset+1],sommet[offset+2]);
-                sommet.removeAt(offset+1);
+                addTriangle(sommets[offset],sommets[offset+1],sommets[offset+2]);
+                if (color.size()>=3)
+                    addTriangleColor(color);
+                sommets.removeAt(offset+1);
             }
             else
                 offset=(offset+1)%size;
@@ -253,5 +270,7 @@ void TriMesh::triangulate(QList<int> sommet) {
         else
             offset=(offset+1)%size;
     }
-    addTriangle(sommet[0],sommet[1],sommet[2]);
+    addTriangle(sommets[0],sommets[1],sommets[2]);
+    if (color.size()>=3)
+        addTriangleColor(color);
 }

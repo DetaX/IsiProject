@@ -42,9 +42,12 @@ void OffLoader::loadFile(QString fileName) throw(std::logic_error, std::ios_base
         {
             stringList=readLine(textStream);
             QList<int> sommet;
-            for (unsigned int i =1;i<=stringList[0].toInt();++i)
-                sommet.push_back(stringList[i].toInt());
-            triangulate(sommet);
+            Color color;
+            for (unsigned int j =1;j<=stringList[0].toInt();++j)
+                sommet.push_back(stringList[j].toInt());
+            for (unsigned int j =stringList[0].toInt()+1;j<stringList.size();++j)
+                color.push_back(stringList[j].toFloat());
+            triangulate(sommet,color);
         }
         file.close();
         this->computeNormalsT();

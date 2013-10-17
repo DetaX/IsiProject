@@ -18,7 +18,7 @@
 typedef glm::vec3  Vertex;
 typedef glm::vec3  Normal;
 typedef std::vector<int> Triangle;
-
+typedef std::vector<float> Color;
 
 using namespace std;
 /** 
@@ -30,6 +30,7 @@ class TriMesh : public Object3D {
 protected:
     std::vector<Vertex>   _vertices;
     std::vector<Triangle> _triangles;
+    std::vector<Color>    _colors;
     std::vector<Normal>   _normalsT;
     std::vector<Normal>   _normalsV;
 
@@ -81,6 +82,12 @@ public:
    * @param v3 third vertex of the triangle
    */
     void addTriangle(int v1, int v2, int v3);
+
+    /**
+   * adds a color to  a triangle
+   * @param c the color to be added
+   */
+    void addTriangleColor(Color c);
 
     /**
    * adds a triangle normal to the mesh
@@ -135,11 +142,13 @@ public:
 
     bool pointInTriangle(Vertex A, Vertex B, Vertex C, Vertex vertex);
     bool sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B);
+
     /**
      * cuts a polygon in triangles
      */
 
-    void triangulate(QList<int> sommet);
+    void triangulate(QList<int> sommets, Color color);
+
 };
 
 
