@@ -43,7 +43,7 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
     }
     _min[2]=zMin;
     _max[2]=zMax;
-
+    std::cout<<zMax;
     this->normalize();
     computeNormalsT();
     computeNormalsV();
@@ -66,4 +66,8 @@ void FuncSurface::normalize()
 float FuncSurface::func_expcos(float x, float y)
 {
     return exp(-(x*x/2+y*y/2))*cos(2*x*x+2*y*y);
+}
+float FuncSurface::func_sqrt(float x, float y)
+{
+    return sqrt(x*x+y*y);
 }

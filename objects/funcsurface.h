@@ -19,6 +19,7 @@ public:
                 float miny, float maxy, float(*func)(float, float)=NULL);
     void normalize();
     static float func_expcos(float x, float y);
+    static float func_sqrt(float x, float y);
 
 protected:
     float _min[3];
