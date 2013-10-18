@@ -61,42 +61,32 @@ void TriMesh::computeNormalsT(){
         glm::vec3 normal = glm::normalize(glm::cross(vect1,vect2));
         addNormalT(normal);
     }
-
-
-
 }
 
 
 void TriMesh::computeNormalsV(float angle_threshold){
     _normalsV.empty();
-    glm::vec3 sum;
+    Normal sum;
     int count;
-    bool share;
 
     for (unsigned int i=0;i<_triangles.size(); ++i) {
         for (unsigned int m = 0;m<3;++m) {
             sum = _normalsT[i];
             count = 1;
             for (unsigned int j = 0;j<_triangles.size();++j) {
-                share = false;
                 if (i!=j && glm::angle(_normalsT[i],_normalsT[j]) < angle_threshold) {
                     for (unsigned int n = 0;n<3;++n) {
-                        if(_triangles[i][m]==_triangles[j][n])
-                            share = true;
+                        if(_triangles[i][m]==_triangles[j][n]) {
+                            sum += _normalsT[j];
+                            count++;
+                        }
                     }
-                }
-                if (share)
-                {
-                    sum += _normalsT[j];
-                    count++;
                 }
             }
             sum /= count;
-            Normal n = sum;
-            addNormalV(n);
+            addNormalV(sum);
         }
     }
-
 }
 
 double TriMesh::normalize(){
@@ -175,7 +165,6 @@ void TriMesh::draw(bool flipnormals){
         }
         glEnd();
     }
-
 }
 
 
