@@ -51,15 +51,20 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
 
 void FuncSurface::normalize()
 {
-    float factor;
+    float factor, average, offset;
     for(int coord=0; coord<3; ++coord)
     {
         if(std::abs(_max[coord])>std::abs(_min[coord]))
             factor = std::abs(_max[coord]);
         else
             factor = std::abs(_min[coord]);
+        average = (std::abs(_max[coord])/factor + std::abs(_min[coord])/factor)/2;
+        offset = (1. - average);
         for(unsigned int i=0;i<_vertices.size();++i)
+        {
             _vertices[i][coord]/=factor;
+            _vertices[i][coord]+=offset;
+        }
     }
 }
 
