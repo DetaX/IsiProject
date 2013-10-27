@@ -82,8 +82,8 @@ void MyScene::draw()
 
     glColor3f(0.8, 0., 0.);
 
-    glm::vec3 c=_objects[_currentObject]->getBoundingBoxCenter();
-    glTranslated(-c.x,-c.y,-c.z);
+    //glm::vec3 c=_objects[_currentObject]->getBoundingBoxCenter();
+    //glTranslated(-c.x,-c.y,-c.z);
     _objects[_currentObject]->draw(_normalsFlipped);
 
     // Draw normals

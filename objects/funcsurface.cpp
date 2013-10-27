@@ -43,7 +43,6 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
     }
     _min[2]=zMin;
     _max[2]=zMax;
-    std::cout<<zMax;
     this->normalize();
     computeNormalsT();
     computeNormalsV();
@@ -51,19 +50,15 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
 
 void FuncSurface::normalize()
 {
-    float factor, average, offset;
+    float factor, offset;
     for(int coord=0; coord<3; ++coord)
     {
-        if(std::abs(_max[coord])>std::abs(_min[coord]))
-            factor = std::abs(_max[coord]);
-        else
-            factor = std::abs(_min[coord]);
-        average = (std::abs(_max[coord])/factor + std::abs(_min[coord])/factor)/2;
-        offset = (1. - average);
+        offset = (_max[coord]+_min[coord])/2;
+        factor = _max[coord]-offset;
         for(unsigned int i=0;i<_vertices.size();++i)
         {
+            _vertices[i][coord]-=offset;
             _vertices[i][coord]/=factor;
-            _vertices[i][coord]+=offset;
         }
     }
 }
