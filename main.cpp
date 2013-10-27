@@ -76,6 +76,7 @@ int main(int argc, char *argv[]){
             // add surface functions
             myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_expcos));
             myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_sqrt));
+            myScene->addObject(new FuncSurface(50,50,-3.14,3.14,-3.14,3.14,&FuncSurface::func_cosi));
         }
         if(offFile!="")
         {

@@ -20,6 +20,7 @@ public:
     void normalize();
     static float func_expcos(float x, float y);
     static float func_sqrt(float x, float y);
+    static float func_cosi(float x, float y);
 
 protected:
     float _min[3];

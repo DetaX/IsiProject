@@ -71,3 +71,7 @@ float FuncSurface::func_sqrt(float x, float y)
 {
     return sqrt(x*x+y*y);
 }
+float FuncSurface::func_cosi(float x, float y)
+{
+    return cos(x)-sin(y);
+}
