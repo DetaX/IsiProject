@@ -215,51 +215,10 @@ void TriMesh::drawVertices(){
     glEnd();
 }
 
-
-bool TriMesh::pointInTriangle(Vertex A, Vertex B, Vertex C, Vertex vertex) {
-    if (sameSide(vertex,A,B,C) && sameSide(vertex,B,A,C) && sameSide(vertex,C,A,B)) {
-        glm::vec3 vc1 = glm::cross(A-B,A-C);
-        if(glm::abs(glm::dot(A-vertex,vc1)) <= .01f)
-            return true;
-    }
-    return false;
-}
-
-bool TriMesh::sameSide(Vertex p1, Vertex p2, Vertex A, Vertex B) {
-    glm::vec3 cp1 = glm::cross(B-A,p1-A);
-    glm::vec3 cp2 = glm::cross(B-A,p2-A);
-    if (glm::dot(cp1,cp2)>=0)
-        return true;
-    return false;
-}
-
 void TriMesh::triangulate(QList<int> sommets, Color color) {
-    int offset = 0;
-    int size = sommets.size();
-    while (sommets.size()>3) {
-        bool cut=false;
-        Vertex a = getVertex(offset);
-        Vertex b = getVertex(1+offset);
-        Vertex c = getVertex(2+offset);
-        if(glm::angle(b-a,c-b) < 180) {
-            unsigned int j;
-            while (!cut && j<sommets.size()) {
-                cut = pointInTriangle(a,b,c,getVertex(j));
-                j++;
-            }
-            if (!cut) {
-                addTriangle(sommets[offset],sommets[offset+1],sommets[offset+2]);
-                if (color.size()>=3)
-                    addTriangleColor(color);
-                sommets.removeAt(offset+1);
-            }
-            else
-                offset=(offset+1)%size;
-        }
-        else
-            offset=(offset+1)%size;
+    for (unsigned int i=0;i<sommets.size()-1;++i) {
+        addTriangle(sommets[i],sommets[i+1],sommets[sommets.size()-1]);
+        if (color.size()>=3)
+            addTriangleColor(color);
     }
-    addTriangle(sommets[0],sommets[1],sommets[2]);
-    if (color.size()>=3)
-        addTriangleColor(color);
 }
