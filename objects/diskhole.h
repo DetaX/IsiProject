@@ -12,6 +12,10 @@
 
 #include "triMesh.h"
 
+/**
+ * DiskHole Object
+ *
+ */
 class DiskHole : public TriMesh
 {
 public:

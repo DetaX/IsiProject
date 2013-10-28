@@ -63,7 +63,6 @@ void TriMesh::computeNormalsT(){
     }
 }
 
-
 void TriMesh::computeNormalsV(float angle_threshold){
     _normalsV.empty();
     Normal sum;
@@ -107,7 +106,6 @@ double TriMesh::normalize(){
     return scale;
 }
 
-
 std::string TriMesh::toString(){
     ostringstream oss;
     oss<< "["<< _name <<" v:"<< _vertices.size() <<", t:"<< _triangles.size() <<"]";
@@ -119,8 +117,6 @@ void TriMesh::toOStream(std::ostream& out) const{
     out << "   v: " << _vertices.size()  << std::endl;
     out << "   t: " << _triangles.size() << std::endl;
 }
-
-
 
 void TriMesh::draw(bool flipnormals){
     unsigned int i,t;
@@ -166,7 +162,6 @@ void TriMesh::draw(bool flipnormals){
         glEnd();
     }
 }
-
 
 void TriMesh::drawNormals(bool flipnormals){
     unsigned int i,t;
@@ -215,9 +210,9 @@ void TriMesh::drawVertices(){
     glEnd();
 }
 
-void TriMesh::triangulate(QList<int> sommets, Color color) {
-    for (unsigned int i=0;i<sommets.size()-1;++i) {
-        addTriangle(sommets[i],sommets[i+1],sommets[sommets.size()-1]);
+void TriMesh::triangulate(QList<int> vertices, Color color) {
+    for (unsigned int i=0;i<vertices.size()-1;++i) {
+        addTriangle(vertices[i],vertices[i+1],vertices[vertices.size()-1]);
         if (color.size()>=3)
             addTriangleColor(color);
     }

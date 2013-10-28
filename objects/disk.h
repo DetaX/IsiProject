@@ -11,6 +11,10 @@
 #define DISK_H
 #include "triMesh.h"
 
+/**
+ * Disk Object
+ *
+ */
 class Disk : public TriMesh
 {
 public:

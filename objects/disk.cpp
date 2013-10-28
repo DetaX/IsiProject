@@ -19,15 +19,21 @@ Disk::Disk(int nvertices, int ndisk)
     //side triangles
     for(int i=0;i<ndisk-2;++i) {
         for (int j=1; j<nvertices+1; ++j)
-            this->addTriangle(1+j%nvertices+i*(nvertices+1),j+i*(nvertices+1),j+1+nvertices+i*(nvertices+1));
+            this->addTriangle(1+j%nvertices+i*(nvertices+1),
+                              j+i*(nvertices+1),
+                              j+1+nvertices+i*(nvertices+1));
         for (int j=1; j<nvertices+1; ++j)
-            this->addTriangle(j%nvertices+2+nvertices+i*(nvertices+1),j%nvertices+1+i*(nvertices+1),nvertices+j+1+i*(nvertices+1));
+            this->addTriangle(j%nvertices+2+nvertices+i*(nvertices+1),
+                              j%nvertices+1+i*(nvertices+1),
+                              nvertices+j+1+i*(nvertices+1));
     }
     for (int j=1; j<nvertices+1; ++j)
-        this->addTriangle(1+j%nvertices+(ndisk-2)*(nvertices+1),j+(ndisk-2)*(nvertices+1),(ndisk-1)*(nvertices+1));
+        this->addTriangle(1+j%nvertices+(ndisk-2)*(nvertices+1),
+                          j+(ndisk-2)*(nvertices+1),
+                          (ndisk-1)*(nvertices+1));
 
-    computeNormalsT();  // to be fixed
-    computeNormalsV();  // to be fixed
+    computeNormalsT();
+    computeNormalsV();
 }
 
 

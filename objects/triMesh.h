@@ -138,9 +138,11 @@ public:
 
     /**
      * cuts a polygon in triangles
+     * @param vertices the vertices composing the polygon
+     * @param color the color associated with the polygon
      */
 
-    void triangulate(QList<int> sommets, Color color);
+    void triangulate(QList<int> vertices, Color color);
 
 };
 

@@ -13,6 +13,10 @@
 
 #include "triMesh.h"
 
+/**
+ * Cone Object
+ *
+ */
 class Cone : public TriMesh
 {
 public:

@@ -1,11 +1,11 @@
 #include "off_loader.h"
 #include "QFile"
 #include "QList"
-
 #include <QChar>
 
 OffLoader::OffLoader(std::string fileName) throw(std::logic_error, std::ios_base::failure)
 {
+    _name = "OFF";
     this->loadFile(QString::fromStdString(fileName));
 }
 
@@ -41,13 +41,13 @@ void OffLoader::loadFile(QString fileName) throw(std::logic_error, std::ios_base
         for(double i=0;i<polygonNumber; ++i)
         {
             stringList=readLine(textStream);
-            QList<int> sommet;
+            QList<int> vertices;
             Color color;
             for (unsigned int j =1;j<=stringList[0].toInt();++j)
-                sommet.push_back(stringList[j].toInt());
+                vertices.push_back(stringList[j].toInt());
             for (unsigned int j =stringList[0].toInt()+1;j<stringList.size();++j)
                 color.push_back(stringList[j].toFloat());
-            triangulate(sommet,color);
+            triangulate(vertices,color);
         }
         file.close();
         this->computeNormalsT();

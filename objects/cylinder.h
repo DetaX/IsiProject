@@ -12,7 +12,10 @@
 #define CYLINDER_H
 
 #include "triMesh.h"
-
+/**
+ * Cylinder Object
+ *
+ */
 class Cylinder : public TriMesh
 {
 public:

@@ -12,6 +12,10 @@
 
 #include "triMesh.h"
 
+/**
+ * Torus Object
+ *
+ */
 class Torus : public TriMesh
 {
 public:

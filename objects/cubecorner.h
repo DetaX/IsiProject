@@ -12,6 +12,10 @@
 
 #include "triMesh.h"
 
+/**
+ * CubeCorner Object
+ *
+ */
 class CubeCorner : public TriMesh
 {
 public:

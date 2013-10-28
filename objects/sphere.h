@@ -12,6 +12,10 @@
 
 #include "triMesh.h"
 
+/**
+ * Sphere Object
+ *
+ */
 class Sphere: public TriMesh
 {
 public:
