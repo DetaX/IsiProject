@@ -1,6 +1,0 @@
-<map id="MyMainWindow::MyMainWindow" name="MyMainWindow::MyMainWindow">
-<area shape="rect" id="node3" href="$classMyQGLViewer.html#a8e959c24b6541e198de74a83a014c77e" title="MyQGLViewer::setMyScene" alt="" coords="269,5,456,32"/>
-<area shape="rect" id="node5" href="$classUi__MainWindow.html#acf4a0872c4c77d8f43a2ec66ed849b58" title="Ui_MainWindow::setupUi" alt="" coords="279,56,446,83"/>
-<area shape="rect" id="node9" href="$classMyMainWindow.html#acbae9d2dda0f04dda1722c45606b8881" title="MyMainWindow::slotAbout" alt="" coords="274,107,451,133"/>
-<area shape="rect" id="node7" href="$classUi__MainWindow.html#a097dd160c3534a204904cb374412c618" title="Ui_MainWindow::retranslateUi" alt="" coords="505,56,701,83"/>
-</map>
