@@ -81,9 +81,10 @@ void MyScene::draw()
     glPolygonMode(GL_FRONT_AND_BACK, _displayMode&MyScene::WIREFRAME ? GL_LINE : GL_FILL);
 
     glColor3f(0.8, 0., 0.);
-
-    //glm::vec3 c=_objects[_currentObject]->getBoundingBoxCenter();
-    //glTranslated(-c.x,-c.y,-c.z);
+    if( _objects[_currentObject]->getName() != "FuncSurface") {
+        glm::vec3 c=_objects[_currentObject]->getBoundingBoxCenter();
+        glTranslated(-c.x,-c.y,-c.z);
+    }
     _objects[_currentObject]->draw(_normalsFlipped);
 
     // Draw normals
