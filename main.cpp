@@ -28,17 +28,6 @@
 #include "objects/funcsurface.h"
 #include "objects/off_loader.h"
 
-/**
-* Program usage
-* Should be handled with the tclap library
-*/
-void usage(char* name){
-    cout<< "usage: " << name << " [options]" <<endl;
-    cout<< "options:" <<endl;
-    cout<< "  -h, --help                 shows this message" <<endl;
-    cout<< "  -o, --off file                 loads OFF file" <<endl;
-}
-
 int main(int argc, char *argv[]){
     QApplication app(argc, argv);
 

@@ -6,12 +6,16 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
                          float (*func)(float,float))
 
 {
+    _name="FuncSurface";
+
+    //Saving max and min for x and y
     _min[0]=minx;
     _min[1]=miny;
     _max[0]=maxx;
     _max[1]=maxy;
-    _name="FuncSurface";
 
+
+    //Computing steps.
     float xStep = (maxx-minx)/nbx;
     float yStep = (maxy-miny)/nby;
 
@@ -20,6 +24,9 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
     int nbLine, nbVertex = 0;
     float z=0;
 
+    //Main loop. We step forward following
+    //x and compute for each step all the vertex (with differents
+    //y) the z value.
     for(float x=minx; x<maxx; x+=xStep)
     {
         nbLine = 0;
@@ -43,11 +50,17 @@ FuncSurface::FuncSurface(int nbx, int nby, float minx, float maxx, float miny, f
     }
     _min[2]=zMin;
     _max[2]=zMax;
+    //Normalising the function.
     this->normalize();
     computeNormalsT();
     computeNormalsV();
 }
 
+/*
+  First we compute the offset and the dimention
+  factor. Then we apply this factor and offset to
+  all the vertexes of the mesh
+  */
 void FuncSurface::normalize()
 {
     float factor, offset;

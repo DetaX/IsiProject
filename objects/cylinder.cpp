@@ -34,6 +34,7 @@ Cylinder::Cylinder(int nvertices, int ndisk)
 
     }
 
+    //Computing normals
     computeNormalsT();
     computeNormalsV();
 }
